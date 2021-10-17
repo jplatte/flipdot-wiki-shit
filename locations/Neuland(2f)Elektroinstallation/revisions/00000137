@@ -1,0 +1,171 @@
+= Elektroinstallation flipdot =
+<<TableOfContents()>>
+
+== Voraussetzungen ==
+=== Fakten ===
+ * Zählerschrank ist bei der Künstlerin im EG.
+ * UV Oben im Flur ist an Zähler rechts oben angeschlossen, Vorzählerabsicherung 3x50A
+ * UV Unten im Treppenhaus ist an Zähler rechts unten angeschlossen, Vorzählersicherung 3x50A
+ * An "UV Oben im Flur" kann man anklemmen - --(Fi durch 35A/32A Schraubsicherungen ersetzen)-- Ungenutzten Fi an den Verteilerklemmen abklemmen und von den Verteilerklemmen direkt abgreifen, einen neuen 3phase 3x32A/3x35A Neozed direkt rechts neben "E4" setzen. So ist das dann am wenigsten invasiv und kann problemlos zurückgebaut werden!!! Entsprechende Abdeckungen für die dann offenen Kabelenden (Schrumpfschlauch+Kabelbinder) noch organisieren.
+
+=== Bestand ===
+||Anzahl||Verbaut||Bauteil||
+||21x||xxx||B16 Hager Automaten||
+||2x||xxx||40A 30mA 3phase Hager FI||
+||1x||xxx||40A 30mA 1phase Condor FI||
+||4x||xxx||EPN 510 Hager Stromstoss||
+||3x||xxx||3phase Verteilerschiene||
+
+=== Allgemeine Aufteilung ===
+ * Zuleitung von "UV Oben im Flur" => Hauptschalter => Stromzähler => Interne Bus-Verteilerklemme => Einzelne FIs => LSS => [ggf. Relais/Schütz =>] Verbraucher
+ * Linker Teil (mit den Plastikabdeckungen) ist für "High Voltage"
+ * Rechter schmaler Teil des UV-Kastens ist für "Low Voltage" gedacht, d.h. max. 24V (weil dort leider keine Abdeckungen vorhanden sind), also WattsUp-Pi, Steuerung von irgendwelchen Relais(?) usw...
+
+== Stromkreise ==
+=== Gewünschte Stromkreise (noch nicht bei "geplante Stromkreise" aufgelistet/implementiert) ===
+ * Strom & Licht Flur-Küche (z.B. Herdplatten)
+ * Notstrom (USV für Alarm, Server, WLAN, Hutschiene, Rotlicht am Boden)
+
+=== Geplante Stromkreise ===
+ * Fi1: [40A 1phase Condor 0.03A] => __'''Core-Infrastruktur [DAUER-AN]'''__
+  ||B16A||Interne Steuerung [Schütz?, 24V-Netzteil, Relais und Co]||
+  ||C16A||USV [Notstrom] (Hier ein C Automat da der sonst beim Umschalten der USV zwischen Akku und Netz unter ungünstigen Umständen rausfliegen kann....)||
+  ||B10A||Notbeleuchtung||
+  ||B16A||[RESERVE]||
+ * Fi2: [40A 3phase hager 0.03A] => __'''Werkstatt'''__
+  ||B16A||[Steckdosen Werkstatt (ohne Fräse||Schütz Not-Aus Werkstatt||Leitungen zur Werkstatt||
+  ||B16A||[Steckdosen Fräse||Schütz Not-Aus Werkstatt||Leitungen zur Werkstatt||
+  ||B16A||[Abluftanlage||Schütz Not-Aus Werkstatt||Relais Lüftung (eventuell aufgeteilt||Abluftanlage||
+  ||B16A 3phase||[Drehstrom Werkstatt (nicht angeschlossen)]||
+  ||B16A||RESERVE]||
+  ||B16A||RESERVE]||
+ * Fi3: [40A 3phase hager 0.03A] => __'''Küche & WC'''__
+  ||B16A (Küche 3phase für Herd L1)||Schütz Küche||Herd||
+  ||B16A (Küche 3phase für Herd L2)||Schütz Küche||Herd||
+  ||B16A (Küche 3phase für Herd L3)||Schütz Küche||Herd||
+  ||B16A||Küche (reguläre Steckdosenparty incl. Licht||Schütz Küche||AP-Steckdosen Küche (incl Dunstabzugshaube und Dauer-an Licht)||
+  ||B16A||Küche Kühlschrank only||
+  ||B16A||Durchlauferhitzer/Elektro-Warmwasser [WICHTIG: Separater Zähler! Oder Münzeinwurf für Warmwasser? RFID-Steuerung für Member?]||
+  ||B10A||Klobot und Co||
+ * Fi4: [Aus anderer UV weiterverwenden: 40A 1phase 0.03A] => __'''Lötraum'''__
+  ||B16A||Steckdosen Dauer-An||
+  ||B16A||Steckdosen Lötraum (Teil1 - Löt-Tische||Schütz Lötraum&Lounge||
+  ||B16A||Steckdosen Lötraum (Teil2 - PC-Tisch direkt unter UV||Schütz Lötraum&Lounge||
+ * Fi5: [to-buy: 1phase 0.03A] => __'''Lounge & Vortragsraum'''__
+  ||B16A [Lounge Dauer-An]||Lounge Steckdosen Dauer-An||
+  ||B16A [Lounge Not-Aus1]||Lounge Steckdosen am "Not-Aus" (Teil1)||Schütz Lounge||
+  ||B16A [Lounge Not-Aus2]||Lounge Steckdosen am "Not-Aus" (Teil2)||Schütz Lounge||
+  ||B16A [Vortragsraum Dauer-An]||Vortragsraum Steckdosen Dauer-An||
+  ||B16A [Vortragsraum Not-Aus1]||Vortragsraum Steckdosen am "Not-Aus" (incl. Beleuchtung)||Schütz Vortragsraum||
+  ||B16A [Vortragsraum Not-Aus2]||Vortragsraum Steckdosen am "Not-Aus" (incl. Beleuchtung)||Schütz Vortragsraum||
+ * Fi6: [to-buy: 1phase 0.03A] => __'''Licht&Blinkenlights Überall'''__
+  ||B10A [Licht Lötraum]||Relais Licht Lötraum||Licht Lötraum||
+  ||B10A [Licht Werkstatt]||Relais Licht Werkstatt||Licht Werkstatt||
+  ||B10A [Licht Lounge]||Relais Licht Lounge||Licht Lounge||
+
+<<Anchor(Needs)>>
+
+=== Benötigte Teile ===
+''Liste ist noch nicht komplett!!! Also vor Bestellung nochmal Wolfi fragen!''
+
+ * Kabel: [Referenz für Querschnitt-VS-Absicherung: [[http://www.mkfgf.de/Leitungsberechnung.pdf|Leitungsberechnung]] / [[http://www.njumaen.de/t4tt/pdf/kabelquerschnitte.pdf|kabelquerschnitte]] / [[http://www.isoblock.eu/assets/plugindata/poola/isoblock-faltblatt-technische-tabellen|kabelquerschnittstabellen]]
+  * Linksammlung: [[http://www.obi.de/decom/product/Mantelleitung_NYM-J_3_x_1,5_Grau_25_m/7619059|Kabel 16mm²]] 0,70€/m 1phase
+  * ca. 50-60 Meter 1.5mm² __1phase(L,N,PE)__ [Hauptsächlich für Blinkenlights und Beleuchtung!]
+    ||Länge(m)...||...von UV bis:||
+    ||26m||Lounge||
+    ||13m||Werkstatt||
+    ||13m||Lötraum||
+  * ca. 100 Meter 2.5mm² __1phase(L,N,PE)__ [Hauptsächlich für normale Stromkreise!]
+    ||Länge(m)...||...von UV bis:||
+    ||13m||Werkstatt||
+    ||10m||Küche||
+    ||13m||Lötraum||
+    ||26m||Lounge||
+    ||10m||Vortragsraum||
+  * ca. 20-30 Meter 2.5mm² __3phase(L1,L2,L3,N,PE)__ [Für 3phase-Sachen: Herd, Anschlussvorbereitung Drehstrom Werkstatt]
+    ||Länge(m)...||...von UV bis:||
+    ||15m||Herd/Küche||
+    ||5m||Werkstatt||
+  * 15 Meter 16mm²  __3phase(L1,L2,L3,N,PE)__ (10-15m sollten ausreichen => Zuleitung von UV oben im Treppenhaus zu UV im Lötraum)
+  * [[https://secure.reichelt.de/?ARTICLE=24731|Aderendhülsenparty]] 4,30€ (die guten mit Plastik beim Kabelübergang)
+  * [[https://secure.reichelt.de/?ARTICLE=137534|Aderendhülsen-Crimpzange]] 30,30€ (muss auch für 16mm² Kabel gehen! Also nicht einfach irgendeine im Baumarkt kaufen ohne vorher die Specs zu checken!)
+
+ * Sicherungsautomaten (LSS/Fi):
+  * 4x [[https://secure.reichelt.de/?ARTICLE=155578|B10A Automat]] 3,60€
+  * 2x [[https://secure.reichelt.de/?ARTICLE=155565|Singlephase 30mA FI]] 24,95€
+
+ * Sicherungen (Neozed):
+  * 1x [[https://www.hornbach.de/shop/Neozed-Sicherungseinsatz-35A-E18-D-02-10-Stueck/3817512/artikel.html|10er-Packung Neozed Sicherungseinsätze 35A D02]] 4.79€/Stück
+
+ * Relais/Schütz: [TODO: Anzahl bestimmen! Blinkenlights + Beleuchtung pro Raum steuerbar, d.h. für jedes dann auch ein eigenes Relais. Genauso wie für jeden Stromkreis pro Raum auch Schütz/Relais.]
+  * [[https://secure.reichelt.de/?ARTICLE=146910|IS-400.230.25 Installations-Schütz 25A, 230V, 4xSchließer]] 24,15€
+  * [[https://secure.reichelt.de/?ARTICLE=69866|ABB ESB20-20-230 Installationsschütze, 2 Schließer, 20A]] 19,30€
+  * [[https://secure.reichelt.de/?ARTICLE=146888|IS-100.230.20 Installations-Schütz 20A, 230V, 1xSchließer]] 19,25€
+  * [[https://secure.reichelt.de/?ARTICLE=26592|24V Installationsrelais]] 12,95€ [__Helmut: Hat noch welche, bitte mitbringen! =3 __]
+          => Alternativ einfach welche aus der "Canbus-Röhre" klauen???? -> Helmut nochmal fragen.
+
+ * Klemmen und Klemmenzubehör:
+    ||Anzahl||Typ [Dreier-Durchgangsklemmen]||
+    ||1337x||[[https://secure.reichelt.de/?ARTICLE=100772|WAGO 2016-1304 - 3-Leiter-Durchgangsklemme 76A 0,5-16,0mm² Blau]]||
+    ||1337x||[[https://secure.reichelt.de/?ARTICLE=100771|WAGO 2016-1301 - 3-Leiter-Durchgangsklemme 76A 0,5-16,0mm² Grau]]||
+    ||1337x||[[https://secure.reichelt.de/?ARTICLE=100773|WAGO 2016-1307 - 3-Leiter-Durchgangsklemme 76A 16,0mm² GELBGRÜN]]||
+    ||1337x||[[https://secure.reichelt.de/?ARTICLE=100774|WAGO 2016-1392 - Abschluss-/Zwischenplatte für WAGO 2016-13.., orange]]||
+
+    ||Anzahl||Typ[Zweier-Durchgangsklemmen]||
+    ||1337x||[[https://secure.reichelt.de/?ARTICLE=100768|WAGO 2016-1204 - 2-Leiter-Durchgangsklemme 76A 0,5-16,0mm² bl]]||
+    ||1337x||[[https://secure.reichelt.de/?ARTICLE=100767|WAGO 2016-1201 - 2-Leiter-Durchgangsklemme 76A 0,5-16,0mm² GRAU]]||
+    ||1337x||[[https://secure.reichelt.de/?ARTICLE=100769|WAGO 2016-1207 - 2-Leiter-Durchgangsklemme 76A 0,5-16,0mm² GELBGRÜN]]||
+    ||1337x||[[https://secure.reichelt.de/?ARTICLE=100770|WAGO 2016-1292 - Abschluss-/Zwischenplatte für WAGO 2016-12.., orange]]||
+
+    ||Anzahl||Typ [Verbindungsbrücken]||
+    ||1337x||[[https://secure.reichelt.de/?ARTICLE=100775|WAGO 2016-402 - Kammbrücke 2-fach für WAGO 2016-xxxx]]||
+    ||1337x||[[https://secure.reichelt.de/?ARTICLE=100776|WAGO 2016-403 - Kammbrücke 3-fach für WAGO 2016-xxxx]]||
+    ||1337x||[[https://secure.reichelt.de/?ARTICLE=100777|WAGO 2016-404 - Kammbrücke 4-fach für WAGO 2016-xxxx]]||
+  * ?x [[https://secure.reichelt.de/?ARTICLE=32237|Wago Klemmen 783-604 in Blau]] 1,10€
+  * ?x [[https://secure.reichelt.de/?ARTICLE=100768|WAGO 2016-1204 2-Leiter-Durchgangsklemme 76A 0,5-16,0mm² blau]] 2.10€
+  * ?x [[https://secure.reichelt.de/?ARTICLE=100767|WAGO 2016-1201 2-Leiter-Durchgangsklemme 76A 0,5-16,0mm² grau]] 2.05€
+  * ?x Verteilerklemmen Wago (die gleichen wie rechts neben dem Stromzähler schon verbaut sind! Eventuell auch noch andere kleinere dazu...)
+  * ?x Wago mehrfach Klemme 16mm2 auf kleiner
+  * ?x Klemmen Brücken? => Siehe [[https://www.reichelt.de/Durchgangsklemmen-WAGO-TOPJOB-S/2/index.html?&ACTION=2&LA=2&GROUPID=5756|Durchgangsklemmen WAGO TOPJOB-S]]
+  * ?x Wago 783-317 Abdeckplatte
+
+ * Sonstiges:
+  * ????x [[https://secure.reichelt.de/?ARTICLE=155614|Singlephase Verteilerschiene]] 4,05€
+  * [[https://www.reichelt.de/Klemmen/2/index.html?&ACTION=2&LA=2&GROUPID=5752|Klemmen]] - Welche?
+  * [[https://www.reichelt.de/Verteiler-Einbaugeraete/2/index.html?&ACTION=2&LA=2&GROUPID=6651|Installationszeugs]]
+  * Not-Aus Schalter [2x für Hart-Not-Aus (den Relais Stromzufuhr zu den Relais/Schütz unterbrechen]
+  * Munition für Wolfis Schilderdrucker (damit man den ganzen Kabelsalat im Schaltschrank und überall anders auch gut beschriften kann)
+  * https://secure.reichelt.de/?ARTICLE=121079   EQUIP 333282 :: Steckdosenleisten für USV, 9-fach Schutzkontakt
+  * https://secure.reichelt.de/?ARTICLE=30974  CEE-DOSE 3-16 :: CEE-Steckdose, 400V, 16A, rot, Aufputz
+  * https://secure.reichelt.de/?ARTICLE=24109   EL FR SKDO 2 W :: Schutzkontaktsteckdose, IP44, 2-fach-waag.
+  * Bei Hornbach billiger: https://www.hornbach.de/shop/Steckdose-Feuchtraum-Aufputz-arktisweiss/2704190/artikel.html
+  * https://secure.reichelt.de/?ARTICLE=24103   EL FR TA :: Taster, Feuchtraum IP44, Aufputz, grau
+  * https://secure.reichelt.de/?ARTICLE=24104  EL FR SS :: Serienschalter, Feuchtraum IP44, Aufputz, grau
+
+ * Schon vorhanden / gekauft / doch nicht benötigt:
+  * --([[https://secure.reichelt.de/?ARTICLE=6688|COKA 5MM Kabelschellen 5mm, Pack=100 Stück]])-- haben wir
+  * --([[https://secure.reichelt.de/?ARTICLE=123519|EL E 114 Feuchtraumabzweigdose 100x100x40mm]])-- haben wir
+  * --(1x [[https://secure.reichelt.de/?ARTICLE=155582|C16A Automat]] 5,60€ )-- [Wolfi: Habe noch einen alten Automaten bei mir gefunden, bringe ich mit.]
+  * --([[http://www.ebay.de/itm/201570061558|Ebay: Abdeckungen für hager Schrank]] 15€ (nochmal gucken ob die auch passen!))-- => Brauchen wir wahrscheinlich nicht.
+
+== Fragen & Antworten ==
+=== Zu klärende Sachen ===
+ * Wo sollen die "Not-Aus" Schalter hin? Wie viele? Was soll da alles dran? [Überall wo Maschinen oder gefährliche Spannung ist: Werkstatt mech. und elektrisch]
+  * Ein Not-Aus in die Werkstatt.
+ * Separaten Aus-Schalter für die Küche? Eventuell mit 2h Timer oder so? [wenn von anderen parteien genutzt vllt. ungünstig]
+  * --(Nein, Küche soll eigenen Dauerstrom aus dem Flur bekommen, nicht über Space.)--
+   * Halte ich (Wolfi) nicht für sonderlich sinnvoll das aus dem Flur zu zapfen, da an die alte Elektroinstallation nix drangefriemelt werden soll!
+  * Totmann-Schalter für Herdplatten (muss alle --30-- 60 Minuten gedrückt werden) => Gute Idee! Schalter ist auch schon vorhanden (schöner Industrie-Taster in robustem Gehäuse).
+ * Automatisches Abschalten über Shut-Down-System sobald der Space abgeschlossen wird! Eventuell mit Verzögerungstimer? [ja, das ist gut. momentan große Unklarheit: Was schalte ich mit diesem Schalter an oder aus?]
+  *Siehe "Geplante Stromkreise" [TODO: Das noch irgendwie erkenntlich machen, was jetzt Dauer-An soll und was nicht.....]
+   * --(Dieser Schalter schaltet alle Blinkenlights, das fd-Display, den Gäste-PC, den TV-Pi, den Getränkezähler, den Klobot-Pi, die Werkstatt, die Lötecke den Workshop-Raum etc. ab)--
+   * --(Was nicht heruntergefahren wird: Server, Netzwerk, WLAN, Schloss, GSM, Alarmanlage, Telefon/Anrufbeantworter, (Bewegungsmelder und zukünftig Aktoren), Heizungssteuerung, Küche (inkl. Kühlschrank), Spülküche (inkl. Spülmaschine), Klo-Lüfter (exkl. Klobotspiel))--
+  
+
+<<Anchor(Wuensche)>>
+
+=== Wünsche ===
+Hier bitte Wünsche für Anschlüsse hinterlassen [mit Raum und wo im Raum, ob Dauer-An oder nicht]
+
+ * Bitte alle Blinkenlights in einen eigenen Stromkreis, der durch einen Helligkeitssensor gesteuert wird. Sonst blinkt es auch am helligten Tag - unnötig. [alles doch winzige Leistungen, oder?]
+ * Totmannschalter für Herdplatten in der Küche

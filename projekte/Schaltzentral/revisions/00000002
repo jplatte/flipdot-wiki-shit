@@ -1,0 +1,34 @@
+Schaltzentral ist unser Setup von Zigbee und WLAN Lampen, koordiniert über einen MQTT Broker, gesteuert über ein Android Tablet.
+
+== MQTT Broker ==
+
+ * https://mosquitto.org/ installieren (apt install mosquitto, fertig!)
+
+== Zigbee Ikea Leuchten ==
+
+ * An einem Raspberry ein Zigbee Modul anschließen (TODO: Was für ein Modul?)
+ * https://www.zigbee2mqtt.io/ auf dem Raspberry installieren
+
+== WLAN Sonoff Lampen ==
+
+ * Tasmota Firmware draufflashen
+ * Mit nmap Netzwerk scannen und IP direkt im Browser eingeben (Standard Port 80). Im UI Hostname vom MQTT Broker eingeben
+
+== Android Tablet ==
+
+ * https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=de installieren
+ * Tablet an die Wand motieren
+ * Konfiguration lässt sich mit dieser App direkt über metrics/exchange teilen
+
+= FAQ =
+
+== Wie füge ich eine neue Zigbee Lampe hinzu? ==
+
+ * Halte die Lampe ca. 3cm vom Zigbee Sender entfernt
+ * Schalte sie ein
+ * [[https://www.zigbee2mqtt.io/information/mqtt_topics_and_message_structure.html#zigbee2mqttbridgeconfigdevicesget|Hol dir die device config]]:
+   * Horche auf die device config: `mosquitto_sub -t "zigbee2mqtt/bridge/config/devices" -h mqtt.fd`
+   * Lass dir eine device config schicken: `mosquitto_pub -t "zigbee2mqtt/bridge/config/devices/get" -m "" -h mqtt.fd`
+     * Tipp: Schreibe dir die config in eine Datei (`> config.json` am Ende des Befehls). Du kannst dir eine Funktion [[https://gist.github.com/soerface/8e44ebd495be72aee481d65c1003a015|jless]] definieren, dann `jless config.json`
+ * Suche aus der config die neue Lampe heraus. Benutze den friendly_name ("0x..."). Versuche, die Lampe ein- und auszuschalten: `mosquitto_pub -t "zigbee2mqtt/FRIENDLY_NAME/set" -m "ON" -h mqtt.fd`
+ * Wenn du die richtige Lampe gefunden hast, [[https://www.zigbee2mqtt.io/information/mqtt_topics_and_message_structure.html#zigbee2mqttbridgeconfigrename|ändere]] den "friendly_name" auf etwas sinnvolles:

@@ -1,0 +1,78 @@
+== Neue Member ==
+ * Feliks
+ * typ_o (Memberliste, Begrüßungsmail)
+
+== Rechnungen ==
+Du hast etwas für flipdot gekauft und das Geld ausgelegt.
+
+ * DOB / Hemdmann
+
+== Smartmeter / Stromzähler ==
+ * Initiator: typ.o
+ * Umsetzung: Wolfi
+ * Ansprechpartner:
+  * Sören, er hat http://flipdot.wegenerd.de/#/dashboard/db/powerconsumption eingerichtet
+ * Datenquelle: http://infragelb.de/flipdot-power/
+
+== Elektroinstallation ==
+ * Ansprechpartner: Wolfi
+
+== Türschloss ==
+[[Projekte/Tür|Projektseite]]
+
+ * Initiator: typ.o
+ * Ansprechpartner: Schloss unten (GSM) typ.o, Schloss oben (SSH) : Malled
+ * Eigener Zugang (nach 3 Mon. Membership):
+  * per Handynummer: typ.o
+  * per SSH: Malled
+  * per flipdot-App: Daniel Huhn
+
+== HackerDS (Fernseher) ==
+ * Initiator: Daniel Huhn
+ * Ansprechpartner: Daniel Huhn, Sören Wegener
+ * Code: https://github.com/hackerDS
+ * HowTo: [[BildschirmAnFernseher|Bildschirm an Fernseher streamen]]
+
+== CAN-Bus ==
+[[Projekte/CANberry|Projektseite]]
+
+ * Initiator: typ.o (Hardware), Daniel Huhn, Malled (Software)
+ * Code: https://github.com/flipdot/Spacecontrol/tree/master/CanBusServer
+
+== Heizungssteuerung / Thermostat ==
+ * Initiator: Malte
+ * Ansprechpartner: Daniel Huhn, Malte
+ * Code: https://github.com/flipdot/OpenHR20-Firmware
+
+== flipdot.org Webseite ==
+ * Initiator: Felix (Blog, Wiki)
+ * Ansprechpartner: Daniel Huhn (Server Zugang, Android App Backend), typ.o (Blog-Content)
+ * Benutzer-Online-Liste: Malte
+  * [[SpaceStatus|Doku]]
+
+== forum.flipdot.org Forum ==
+ * Serveradmin: cfstras
+ * Forenadmin: feliks, Wolfi, ...
+
+== Android App ==
+ * Initiator: Daniel Huhn
+ * Code: https://github.com/flipdot/android-app
+ * App Store: https://play.google.com/store/apps/details?id=org.flipdot.flipdotapp
+
+== Router / Netzwerk / VPN ==
+ * Initiator: Malte
+ * Ansprechpartner: Malte
+ * Ansprechpartner für Nachrichtenmeisterei-Netzwerk&Internet: Wolfi
+
+== Klobot ==
+[[Projekte/klobot|Projektseite]]
+
+ * Initiator: kssoz
+ * Code: https://github.com/flipdot/shit
+ * Ansprechpartner: feliks
+
+== Küche ==
+[[Projekte/Küche|Projektseite]]
+
+ * Initiator: kssoz
+ * Ansprechpartner: And, Wolfi, typ_o

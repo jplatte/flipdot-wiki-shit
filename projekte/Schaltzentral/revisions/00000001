@@ -1,0 +1,21 @@
+Schaltzentral ist unser Setup von Zigbee und WLAN Lampen, koordiniert über einen MQTT Broker, gesteuert über ein Android Tablet.
+
+== MQTT Broker ==
+
+ * https://mosquitto.org/ installieren (apt install mosquitto, fertig!)
+
+== Zigbee Ikea Leuchten ==
+
+ * An einem Raspberry ein Zigbee Modul anschließen (TODO: Was für ein Modul?)
+ * https://www.zigbee2mqtt.io/ auf dem Raspberry installieren
+
+== WLAN Sonoff Lampen ==
+
+ * Tasmota Firmware draufflashen
+ * Mit nmap Netzwerk scannen und IP direkt im Browser eingeben (Standard Port 80). Im UI Hostname vom MQTT Broker eingeben
+
+== Android Tablet ==
+
+ * https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=de installieren
+ * Tablet an die Wand motieren
+ * Konfiguration lässt sich mit dieser App direkt über metrics/exchange teilen

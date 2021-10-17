@@ -1,0 +1,23 @@
+Unser [[https://de.wikipedia.org/wiki/Internet_Relay_Chat|IRC]] ist der #flipdot Channel bei [[https://freenode.net/|freenode]]. Hier kannst du uns über einen IRC-Client (z.B. [[https://hexchat.github.io/downloads.html|HexChat]] --( oder [[http://www.mirc.com/|mIRC]])--) oder über den offiziellen [[https://webchat.freenode.net/?channels=flipdot|Freenode-Webchat]]erreichen.
+
+----
+
+Bei IRCs empfängst du Nachrichten nur, während du im jeweiligen Raum anwesend bist. Wenn du, wie bei bekannten Messengern üblich, auch Nachrichten lesen können möchtest, die in deiner Abwesenheit versendet wurden, kannst du dafür [[https://riot.im/|Riot.im (klick mich!)]] benutzen. Riot funktioniert im Browser und bietet Apps und Software für alle gängigen (mobilen) Betriebssysteme und Smartphones an.
+
+Sobald du bei Riot angemeldet bist, kannst du unserem Raum beitreten: [[https://riot.im/app/#/room/#flipdot:matrix.org|#flipdot:matrix.org]].
+
+Wenn du über Riot und damit über den [[http://matrix.org/|Matrix-Standard]] chattest, wirst du im IRC standardmäßig als {{{deinMatrixNutzername[m]}}} angezeigt. Wenn du das ändern willst, schreib eine Nachricht an [[https://riot.im/app/#/user/@appservice-irc:matrix.org|@appservice-irc:matrix.org]] mit dem Inhalt {{{!nick irc.freenode.net neuerIRCNickname}}}.
+
+Um deinen Benutzernamen zu registrieren, schreibe [[https://riot.im/app/#/user/@freenode_NickServ:matrix.org|@freenode_NickServ:matrix.org]] mit dem folgenden an:
+{{{register meinNeuesGeheimesPasswort meine@email.de}}}
+
+Danach kannst du dein Passwort an Riot/Matrix weitergeben: schreibe dazu {{{!storepass meinNeuesGeheimesPasswort}}} an [[https://riot.im/app/#/user/@appservice-irc:matrix.org|@appservice-irc:matrix.org]]. Ab sofort wirst du im IRC automatisch über Riot/Matrix angemeldet.
+
+----
+Hier sind die Verbindungsdetails für traditionelle IRC-Clients:
+
+{{{
+Server: chat.freenode.net
+Port:   6666 oder 7070 (SSL)
+Raum:   #flipdot
+}}}

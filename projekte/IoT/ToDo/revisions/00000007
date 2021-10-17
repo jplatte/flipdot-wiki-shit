@@ -1,0 +1,27 @@
+= Mech =
+
+ * Leitungs-Einlaß für Sensor auf Gehäuseunterseite verlegen
+ * Zugang zum Wifi-Manager-Jumper auf Gehäuse Unterseite schaffen
+ * Alternative Deckelmontage ohne Magnete? (Ggf 2 x M3 ins Holz)
+ * Schild (Sensorname, IP, Batteriewechsel)
+
+= Elektro =
+
+ * Stromverbrauch Messen bei 0.4
+
+= Software =
+
+== GetränkeKistenStatistik - Mikrocontroller-Mess-Software (drinks-storage-state) ==
+
+ * Mess-Ergebnisse vor dem Versenden in kg konvertieren
+ * WebGUI
+  * ESP ID [r]
+  * Netzwerk-SSID, Passwort [rw]
+  * MQTT host [rw]
+  * Tare + one_kg für raw_value -> kg Konvertierung
+
+== GetränkeKistenStatistik - Messwert-KistenAnzahl-Konvertierung (drinks-storage-mqtt) ==
+
+ * Nur Nachricht in MQTT posten, wenn crate_count sich geändert hat
+ * Fehler ausgeben wenn Messwert nicht innerhalb x * Kistengewicht ± Toleranz
+ * Fehler-Ausgabe (auch) als Email o.ä.? (aktuell nur Kommandozeilen-Ausgabe)

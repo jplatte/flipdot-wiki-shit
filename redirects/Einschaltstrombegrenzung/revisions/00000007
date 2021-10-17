@@ -1,0 +1,12 @@
+= Einschaltstrombergrenzung =
+
+== Allgemeine Erklärung ==
+Eine Einschaltstrombegrenzung (auch Sanftanlauf genannt) verhindert Überströme beim Einschalten elektrischer Lasten. Das ist beispielsweise bei Staubsaugern und großen Netzteilen oftmals wichtig, da der Staubsauger beim Beschleunigen aus dem Stillstand quasi einen Kurzschluss darstellt, so auch beim Netzteil, dessen Netzgleichrichter beim Einschalten große Kondensatoren auflädt.
+
+Diese Problematik wird mit einer Schutzschaltung verhindert, die diesen Strom begrenzt. Im einfachsten Falle ist dies ein Widerstand in Verbindung mit einem Netzspannungsrelais. Dabei steigt die Lastspannung zunächst nur langsam bis die Lastspannung den Schwellwert des Netzspannungsrelais übersteigt, da der Innenwiderstand des Verbrauchers steigt, sodass das Relais den Widerstand kurzschließt und die Last schließlich bei voller Netzspannung betrieben wird.
+
+||{{https://upload.wikimedia.org/wikipedia/commons/7/7d/Einschaltverz%C3%B6gerung.png|Schaltplan einer Einschaltstrombegrenzung|width=50%}}||
+||~-Der im Bild gezeigte Trafo ist nur als Beispiel für eine Last zu verstehen und ist nicht zwingend erforderlich.-~||
+
+== flipdot Projekt ==
+Im Space haben wir viele dezentrale Netzteile z.B. für Raspberry-Pis, welche beim Hochfahren ohne Begrenzung häufig abstürzen. Durch eine Einschaltstrombegrenzung wollen wir einen Sanftanlauf bauen.

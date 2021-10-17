@@ -1,0 +1,66 @@
+= DSL =
+In den Gebäuden der Nachrichtenmeisterei sind angeblich 3x 16Mbit/s DSL Kupferkabel angeschlossen bei Vodafone. Das Kabel führt neben unserem gelben Eingang ins Haus und endet am orangen Eingang im Verteiler.
+
+Wir teilen uns eine dieser schmalen asymetrischen Leitungen u.a. mit einem Filmemacher und einer Firma mit Cloud, die ebenfalls GB Upload benötigen. 
+
+== VDSL ==
+In der Nachrichtenmeisterei gibt es bisher kein VDSL, [[petition|das wollen wir ändern!]]
+
+ Anschrift: 
+ Franz-Ulrich-Strasse 18, 
+ 34117 Kassel
+
+=== Vergangenheit ===
+Es geht das Gerücht, es gab mal ein Kabel, dass direkt gegenüber zum Hochbunker der Vodafone in einen Switch führte. Diese Verbindung ist legendär und aktuell nicht vorhanden. Es soll auch bereits Verhandlungen mit der Bahn und einem Anbieter bzgl. Glasfaseranschluss gegeben haben, jedoch soll eine gewisse Landesgrenze hier eine komplizierende Rolle spielen. (Nachrichtenmeisterei auf Bundesgebiet?)
+ 
+=== Fragen ===
+ * Wer hat sich bisher von der Nachrichtenmeisterei um Glasfaser gekümmert?
+ * Kann Wolle bitte den Kabelsalat unten im Flur beschriften? -> Exceltabelle
+ * Wie kommen wir an eine Telefonnummer?
+ * Wo ist der Hausanschluss für Internet/Telefon?
+ * Ist die DB Kommunikationstechnik für Glasfaser am Hbf zuständig?
+
+=== Recherchen ===
+Anrufe bei Vodafone (Kabel Deutschland), Unitymedia und Telekom im Geschäftskundenbereich brachten bisher keinen Erfolg. Die Nachrichtenmeisterei hat einen Vertrag mit der Telefonnummer 05619206270.
+
+Die Telefonanschlüsse der Bahn sind intern in der [[https://de.wikipedia.org/wiki/Bahnselbstanschlussanlage|BASA]] organisiert. Dieses firmeneigene, nicht-öffentliche Netz wurde bei Übernahme von Mannesmann Arcor an die Vodafone verkauft und von der DB zunächst gemietet, dann zurückgekauft. Wahrscheinlich ist die Zuständigkeit mittlerweile über die DB Systel GmbH zur [[https://www.dbkommunikationstechnik.de/dbkt-de/start/ansprechpartner/vertrieb.html|DB Kommunikationstechnik GmbH]] gewandert.
+
+==== DB Kommunikationstechnik ====
+ * Herr Postler (Vertrieb Nord): "Grundsätzlich benötigen wir für derartige Dinge zunächst einen Antrag auf Nutzung der Kupferdoppelader (Cu2Dr - DB-intern Endkundenanschlussleitung oder auch EkuAl genannt) direkt durch den versorgenden Carrier."
+ * Frau Konopacsek (Sales Regionalbereich West): "Sie müssen sich mit Ihrem Anliegen bitte an die Telekom oder Vodafone wenden. Mit diesen beiden Unternehmen haben wir Rahmenverträge und diese können uns dann mit ihrem Anliegen beauftragen. Eine direkte Beauftragung ist leider nicht möglich."
+ * Franz-Ulrich Str. 20 sitzt die Regionalverwaltung West der DB Kommunikations GmbH mit Serverraum und "USP 614" Hauptverteiler im Alucontainer davor. (Herr Reiss?)
+ * Hinter unserem Haus liegen an den Schienen wahrscheinlich Glasfaser. (bis in die Nachrichtenmeisterei?)
+ * Herr Reiss (Regionalleiter West): "Der Auftrag läuft seit Wochen, wir haben keine Antwort oder namentlich bekannten Ansprechpartner der Telekom"
+
+==== Unitymedia ====
+ * Kein VDSL für unsere Adresse möglich
+ * Besitzt Kabel in Hessen
+
+==== Vodafone ====
+ * Haben nur 16er DSL für unsere Adresse
+ * Kein VDSL für Hessen möglich
+ * Kein Ansprechpartner im Hochbunker gegenüber genannt (Kölnische Str. 58A)
+
+==== Telekom ====
+ * Kein VDSL für unsere Adresse möglich
+ * Keine Auskunft, ob die Bahn nebenan Telekom Kunde ist
+ * Michele (Telekom Chat): "Leider kann ich Ihnen die Frage hier im Chat nicht beantworten. Bitte sprechen Sie direkt mit den Kollegen unter 08003301300. Die Kollegen helfen Ihnen gerne weiter"
+ * Telekom Geschäftskundenkontakt Telefonat: "Franz Ulrich Strasse 16 & 19 sehe hier als Adresse. Glasfaser sehe ich hier überhaupt nicht drin."
+ * Glasfaserausbau Telefon: 08007733888
+ * Bahn hat ihren eigenen Ansprechpartner bei der Telekom: Herr Peter Horn 017197xxxxx (Frankfurt)  
+
+===== Tarif-Hack =====
+{{{{
+Adresse Franz Ulrich Str. gibt kein Ergebnis. Dagegen "34117 Kassel, Am Hauptbahnhof 0" führt den Kundendienst zur Autoauswahl sämtlicher Telekom Angebote. Ab da ist die Bedarfsanzeige maximal (Alle Tarife ever) auf dem Bildschirm. Ergebnis: z.B. 400 Mbit/s Glasfaser sind nur über das Kabelnetz verfügbar. Also wählen wir: 200...
+
+200 Mbit/s per Glasfaser bestellbar
+uplink bis max. 100 Mbit/s möglich
+Feste IP
+Telefonflat ins Festnetz 3 Nummern inkl. bis 10 möglich (= 2 Sprachkanäle max. 8 möglich)
+
+Kosten: 
+54,95€ 
++ FTTH 11,90€ 
+= 66,85€
+
+}}}}

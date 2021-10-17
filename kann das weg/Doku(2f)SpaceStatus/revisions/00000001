@@ -1,0 +1,22 @@
+== User im Space ermitteln ==
+
+door.sh
+{{{#!highlight bash
+#!/bin/sh
+iw dev wlan0 station dump | grep Station | awk '{ print $2 }' > tmp/clients
+iw dev wlan1 station dump | grep Station | awk '{ print $2 }' >> /tmp/clients
+wget -q -O /dev/null "<<URL>>/?unknown_hosts=`cat /tmp/clients |
+ sed -f users.sed |
+ grep -E -c  '^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})'`&known_hosts=`cat /tmp/clients |
+ sed -f users.sed | grep -v -E '^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})' | sort | uniq | 
+ sed ':a;N;$!ba;s/\n/,/g'`"
+rm /tmp/clients
+}}}
+
+users.sed
+{{{#!highlight sed
+s/<<MAC>>/<<NICK>>/
+}}}
+
+== Tuer status ==
+TODO

@@ -1,0 +1,22 @@
+= Getränke kaufen =
+
+ 1. Getränk mit Scanner an der Wand einscannen
+ 1. Deinen Username auswählen
+ 1. Auf Zuordnen klicken
+ 1. Bestätigung wird angezeigt
+
+= Guthaben aufladen =
+
+ 1. Die Seite http://drinks-touch.fd/ während du im Space bist öffnen
+ 1. Auswählen, dass du Guthaben aufladen willst
+ 1. Den Anweisungen auf dem Bildschirm folgen
+
+= Neue Getränke-Arten hinzufügen =
+
+ 1. [[https://github.com/flipdot/drinks-scanner-display|Git-Repo]] klonen
+ 1. Einen SSH-Tunnel bauen, damit du auf die Datenbank kommst ({{{ssh -L 5432:127.0.0.1:5432 pi@drinks-touch}}})
+ 1. Das Skript {{{ ./tool_add_drink.py --help }}} ausführen, die Hilfe zeigt dir, welche Parameter eingegeben werden müssen
+
+= Siehe auch =
+
+ https://flipdot.org/wiki/Getr%C3%A4nke

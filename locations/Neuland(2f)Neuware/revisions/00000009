@@ -1,0 +1,58 @@
+Geplante größere Anschaffungen fürs Neuland.
+
+== Tisch/Podest-Modul ==
+ * Umbaubare modulare Treppe/Podest
+   * Sofas/Stühle stehen drauf für Vorträge
+   * Sofas/Stühle werden entfern und Treppenstufen zu Tischen umgebaut für Workshops etc.
+ * Holz
+   * Vierkant
+   * Platten
+ * Metall
+   * Rohre/Schienen/Profile
+
+== Netzwerk ==
+ * CAT6 Kabel
+ * 10GBit Switches
+ * Patchpanel
+   * Patchkabel
+
+== WiFi ==
+ * UniFi AP AC Pro 
+   * 2,4GHz + 5GHz bis 1300MBit/s
+   * [[https://www.ubnt.com/unifi/unifi-ap-ac-pro/|Herstellerseite]]
+   * [[https://www.ubnt.com/downloads/datasheets/unifi/UniFi_AC_APs_DS.pdf|Datenblatt]]
+   * [[http://www.heise.de/preisvergleich/ubiquiti-unifi-ap-ac-pro-uap-ac-pro-a1325749.html|Preisvergleich]]: ~150€
+
+== Projektor ==
+ * BenQ TH681
+   * [[http://www.heise.de/preisvergleich/benq-th681-9h-jc377-13e-a1056997.html|Preisvergleich]]: ~615€
+
+== Server ==
+ * --(Rack-Schrank)--
+   * 19 Zoll Standard-Rack
+   * Tiefe (innen): <390mm
+   * ''bereits vorhanden, nur für Maße aufgeführt''
+ * Gehäuse
+   * [[http://www.cov-hamburg.de/19-Zoll-2HE-Servergehaeuse-IPC-G238-sehr-kurzes-38cm-Rack-Gehaeuse-fuer-Standardnetzteil|2HE IPC G238]] 
+     * Preis: ~120€
+   * [[http://www.19gehäuse.de/product_info.php?products_id=1706|4HE IPC G438]]
+     * Preis: ~130€
+ * MiniATX Mainboard
+ * CPU 
+ * RAM 
+ * PSU 
+ * Festplatten
+   * 1x 512GB SSD 
+     * SDSSDA-480G-G25 
+       * [[http://www.heise.de/preisvergleich/sandisk-plus-480gb-sdssda-480g-g25-a1374047.html|Preisvergleich]]: ~120€
+   * 4x 8TB HDD 
+     * ST8000AS0002
+       * [[http://www.heise.de/preisvergleich/seagate-archive-hdd-v2-8tb-st8000as0002-a1204027.html|Preisvergleich]]: ~210€
+ * Glasfaser
+   * nur, falls Glasfaser vorhanden/benötigt
+   * [[https://en.wikipedia.org/wiki/QSFP|QSFP]]
+     * 540-BBEN
+       * [[http://www.heise.de/preisvergleich/dell-mellanox-connect-x3-540-bben-a1253977.html|Preisvergleich]]: ~390€
+   * [[https://en.wikipedia.org/wiki/Small_form-factor_pluggable_transceiver|SFP+]]
+     * 49Y7980
+       * [[http://www.heise.de/preisvergleich/lenovo-49y7980-embedded-a1355293.html|Preisvergleich]]: ~220€

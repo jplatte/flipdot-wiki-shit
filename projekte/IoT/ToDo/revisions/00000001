@@ -1,0 +1,11 @@
+Mech
+
+ * Leitungs-Einlaß für Sensor auf Gehäuseunterseite verlegen
+ * Zugang zum WiFiManager-Jumper auf Gehäuse Unterseite schaffen
+ * Alternative Deckelmontage ohne Magnete? (Ggf 2 x M3 ins Holz)
+ * Schild (Sensorname, IP, Batteriewechsel)
+
+El
+
+ * Stromverbrauch Messen bei 0.4
+ *

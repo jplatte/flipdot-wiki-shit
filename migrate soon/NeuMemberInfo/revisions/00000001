@@ -1,0 +1,53 @@
+Herzlichen Glückwunsch, Du bist jetzt member im Flipdot!
+
+Das wichtigste zuerst... Richte einen Dauerauftrag bei deiner Bank ein. Ohne Mitgliedsbeiträge können wir uns die Räumlichkeiten nicht leisten!
+
+== Dauerauftrag: ==
+Kontoinhaber: flipdot e.V.
+IBAN: DE07520503530001147713
+Bank: Sparkasse Kassel
+Betrag: 10€/23€ pro Monat
+
+Also bitte direkt nach Lesen dieser Email einrichten!
+
+== Zugang: ==
+Dienstags ist ab 19:00 immer offen und oft voll im Space! An anderen Tagen schau einfach auf flipdot.org oben rechts auf das Tür-Icon, ob jemand da ist und dir öffnen kann. Als member wird deine Telefonnummer nach drei Überweisungen "von einem Menschen" in das GSM Modul eingetragen, welches deinen Anruf entgegennimmt und den Türsummer öffnet (bald auch das Schloss vom Raum oben). Es gibt an der gelben Tür auch eine Funkklingel.
+
+== Mailingliste: ==
+Du solltest gestern eine email "von einem Menschen" erhalten haben, die dich für unsere Mailingliste freigeschaltet hat. Dort diskutieren wir den neusten Scheiss, aber die Liste hat auch viele stille Leser aus alten Flipdot Zeiten (seit 2009): discuss-flipdot-org@flipdot.org
+
+== IRC: ==
+Im IRC sind viele member besser erreichbar. Dort kannst du auch unseren flipbot ansprechen mit "!help". Der teleflip spiegelt den channel nach telegram, wo einige member lieber abhängen, weil der IRC per default keine chathistory hat. Mit Quassel ist es aber eigentlich ganz einfach dieses feature einzurichten. Der IRC Chat wird auch auf einem Bildschirm im Space angezeigt.
+
+Server: chat.freenode.net Port:   6666 oder 7070 (SSL)
+Raum:   #flipdot
+Browser: https://webchat.freenode.net/?channels=flipdot&uio=MTE9NjI30
+Client: http://quassel-irc.org/downloads
+
+== Werkzeug: ==
+Du kannst alles benutzen - danach schön zurückhängen! Wenn was kaputt geht, bitte melden und ersetzen (Haftpflicht). Sprich bitte vorher erfahrene Member an, um eine Einweisung zu bekommen. Insbesondere die Fräse nur in Absprache mit Helmut: https://www.youtube.com/watch?v=uf1zHfzn9n8
+
+== Material: ==
+Im Space gibt es viel Material und wir organisieren häufiger Sammelbestellungen über die Mailingliste. Wenn du ein Projekt für den Space baust, können wir den RasPi/Arduino/etc. aus Vereinsmitteln finanzieren. Für eigene Projekte kaufe dein Material selbst. Wir freuen uns über Spenden, also bring einfach deine alten Netzteile/Kabel/Switche/Blinkenlights/Platinen/etc. mit!
+Nicht alle Geräte und alles Material im Space ist frei zur Benutzung / zum zerforschen - bitte achte auf Aufkleber o.ä., die die zeigen wenn einem Member privat gehört.
+
+== Getränke: ==
+Mate und alles andere kostet 1.- Euro. Es gibt ein http://flipdot.org/blog/archives/329-Prepaid-Getraenke-Abrechnungssystem.html und wir arbeiten an einem http://flipdot.org/wiki/Projekte/Getränkezähler der seit neustem auch einen Etikettendrucker hat (Treiber?). Barcodes scannen soll Spass machen.
+
+== Projekte: ==
+Für eigene Projekte bekommst du als member deinen eigenen Spind-Schlüssel. So kannst du deine Dinge im Space einlagern, so dass niemand sie aus Versehen für flipdot Zwecke verbaut. Schlüssel gibt es bei Felix. Sonst kannst du auch einen Karton beschriften und dein Zeug im Regal oder so lagern.
+
+Am schönsten sind gemeinsame Projekte für den Space! Dazu kannst du hier Ideen einbringen: http://flipdot.org/wiki/Neuland/Ideen und deine Projekt dokumentieren: http://flipdot.org/wiki/Projekte Mit github verwalten wir unsere Software: https://github.com/flipdot (Zugang über DoB oder Felix)
+
+== Verein: ==
+Satzung: https://flipdot.org/wiki/Satzung Vereinsvorsitzende: Felix, Daniel (DoB) und Dino. CCC: Wir sind Erfa des Chaos Computer Clubs: http://ccc.de/de/regional
+
+Mit der Vereinsmeierei halten wir es relativ knapp. Eine Vollversammlung im Jahr muss sein, zur Entlastung des Vorstands. Helmut ist unser großer aktiver Ehrenvorsitzender und Mitgründer des Flipdots. Der Flipdot ist gemeinnützig und kann Spendenquittungen ausstellen.
+
+== BananaNicks: ==
+Wenn Du möchtest, kannst du die MAC Adresse deines Laptops/WiFi-Gerätes von Felix eintragen lassen. So wird dein Nickname auf der Webseite und im IRC unter !status angezeigt: "Doktor, Akademiker und 2 andere sind anwesend". Einen BananaNick bekommt man von BananaJoe verliehen.
+
+== Sauberkeit: ==
+Jeder muss helfen mit den Space sauber zu halten! Mülleimer regelmäßig in großen Sack ausleeren und zum eingezäunten Bahncontainer bringen. Besen benutzen und Späne und Müll wegfegen, Klobürste und Putzmittel benutzen, nach dem Essen Geschirr in die Spülmaschine räumen und anschmeissen (Einweisung durch BananaJoe).
+
+Viel Spass beim Hacken im Flipdot! Bring Deine Haxxor-Freunde mit und zeig ihnen den Space. Bei Fragen wende dich an mich, den 3cpo.

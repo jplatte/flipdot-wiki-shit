@@ -1,0 +1,67 @@
+[[http://flipdot.org/wiki/Neuland/Cyber#Sensoren|Sensoren]] // [[http://flipdot.org/wiki/Neuland/Cyber#Aktoren|Aktoren]] 
+
+= fd-Kybernetik =
+Diese Seite ist der [[https://de.wikipedia.org/wiki/Kybernetik|Kybernetik]] des Hackerspaces gewidmet. Hier sind die Elemente der stets wachsenden Hausautomation systematisch gesammelt und irgendwann(tm) beschrieben und verlinkt. 
+
+Auch hübsche menschenlesbare Diagramme könnten hier irgendwann(tm) entstehen. Teilweise wurden die Messergebnisse bereits mit grafana historisch aufgezeichnet und im IRC mit Befehlen wie !status abrufbar gemacht.
+
+Teilweise sind die Aktoren mit RasPis ausgestattet, teilweise noch nicht kybernetisch integriert. Viele der Space-Objeke beinhalten sowohl Sensorik, als auch [[https://de.wikipedia.org/wiki/Aktorik|Aktorik]]; so ist ein Touchscreen z.B. beides.
+
+----
+
+== Sensoren (Rezeptoren) ==
+=== Bewegungsmelder ===
+=== Türsensoren ===
+=== WLAN Router (Security by Obscurity) ===
+=== Freifunk Router ===
+=== GSM Modul ===
+=== Funkmaus ===
+=== Mega-Joystik ===
+=== Funktastatur ===
+=== Touchscreen ===
+=== Flipdot Display (ping?) ===
+=== fd Laptops Tastaturen ===
+=== Barcode Scanner ===
+=== Einzugsscanner ===
+=== Space Shutdown Schalter ===
+=== Funkklingeltaste ===
+=== Funklichtschalter ===
+=== Strommesser ===
+=== Heizungsthermometer ===
+=== IRC Text Eingabe ===
+=== telegram Text Eingabe ===
+=== Toilettenpapierzähler ===
+
+----
+
+== Aktoren (Effektoren) ==
+=== TV-Bildschirm ===
+=== Türsummer ===
+=== Licht ===
+=== Toilettenventilator ===
+=== Flipdot Display ===
+=== Touchscreen ===
+=== RGB-Lauflicht ===
+=== Lichterkette ===
+=== Schwarzlicht ===
+=== Weißes Lauflicht ===
+=== RGB (+SW) Deckenlicht ===
+=== Fräse ===
+=== Beamer ===
+=== Türschloss ===
+=== Flipdot Laptop Displays ===
+=== Ettikettendrucker ===
+=== Drucker ===
+=== *hel Blinkenlights-Kiste ===
+=== Binäruhr ===
+=== Alarmlicht ===
+=== Funkläutwerk der Klingel ===
+=== Funk-Neonröhren ===
+=== Stereo-lautsprecher ===
+=== Spülmaschine ===
+=== flipbot IRC Text Ausgabe ===
+=== teleflip IRC Text Ausgabe ===
+=== Heizung ===
+=== Klo Lüfter (klobot) ===
+=== Klomonitor (klobot) ===
+=== Joystick (klobot) ===

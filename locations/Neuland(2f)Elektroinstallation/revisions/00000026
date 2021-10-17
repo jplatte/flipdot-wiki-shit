@@ -1,0 +1,77 @@
+= Elektroinstallation FlipDot =
+----
+=== Fakten: ===
+ *Zählerschrank ist bei der Künstlerin im EG.
+ *UV Oben im Flur ist an Zähler rechts oben angeschlossen, Vorzählerabsicherung 3x50A
+ *UV Unten im Treppenhaus ist an Zähler rechts unten angeschlossen, Vorzählersicherung 3x50A
+ *An "UV Oben im Flur" kann man anklemmen - wahrscheinlich Fi durch 40A Automaten ersetzen - oder 40A Schraubsicherungen (besser).
+---- 
+=== Allgemeine Aufteilung: ===
+ *Zuleitung von "UV Oben im Flur" => Hauptschalter => Stromzähler => Interne Bus-Verteilerklemme => Einzelne FIs => LSS => Verbraucher
+ *Stromzähler oben links
+ *LSS usw unten links
+ *Rechter schmaler Teil des UV-Kastens ist für "Low Voltage" gedacht, d.h. max. 24V (weil dort leider keine Abdeckungen vorhanden sind), also WattsUp-Pi, Steuerung von irgendwelchen Relais(?) usw...
+=== Stromkreise: ===
+ *Fi1: [40A 1phase Condor 0.03A] => Core-Infrastruktur [DAUER-AN]
+     1.  B16A => Interne Steuerung [Schütz?, Relais und Co]
+     2.  B16A => USV [Notstrom] (EVENTUELL EIN C AUTOMAT EINBAUEN????)
+     3.  B16A => Notbeleuchtung
+     4.  B16A => [RESERVE]
+     5.  B16A => [RESERVE]
+     6.  B16A => [RESERVE]
+ *Fi2: [to-buy: 1phase 0.03A] => Lötraum
+     7.#7  B16A => Steckdosen Lötraum (Teil1 - Löt-Tische)
+     8.  B16A => Steckdosen Lötraum (Teil2 - PC-Tisch direkt unter UV)
+ *Fi2: [40A 3phase hager 0.03A] => Werkstatt
+     8.#9  B16A => Steckdosen Werkstatt (ohne Fräse)
+     9.  B16A => Steckdosen Fräse
+     10. B16A 3phase => Drehstrom Werkstatt [nicht angeschlossen]
+     19.
+     20.
+ *Fi4: [40A 3phase hager 0.03A] => Küche & WC
+     
+ *Fi5: [to-buy: 3phase 0.03A] => Lounge/Wohnzimmer
+     99. B16A => Küche 3phase für Herd (Teil1)
+     99. B16A => Küche 3phase für Herd (Teil2)
+     99. B16A => Küche 3phase für Herd (Teil3)
+     99. B16A => Küche (reguläre Steckdosenparty)
+     99. B10A => Klobot und Co
+ *Fi6: [to-buy: 1phase 0.03A] => Vortragsraum
+ *Fi7: [to-buy: 1phase 0.03A] => Licht Überall
+     99. B10A => Licht Lötraum
+     99. B10A => Licht Werkstatt
+     99. B10A => Licht Lounge 
+     99. B10A => Licht Vortragsraum
+----
+=== Benötigte Teile [Liste ist noch nicht komplett!!!] ===
+ *Kabelsalat 16mm^2 in braun&blau (und evtl auch anderer Querschnitt noch dazu sowie andere Farben?)
+ *Verteilerklemmen Wago - die selben wie rechts neben dem Stromzähler schon verbaut sind! Eventuell auch noch andere kleinere dazu...
+ *Aderendhülsenparty (dann aber die guten Aderendhülsen mit Plastik beim Kabelübergang...)
+ *Aderendhülsen-Crimpzange (muss auch für 16mm^2 Kabel gehen! Also nicht einfach irgendeine im Baumarkt kaufen ohne vorher die Specs zu checken!)
+ *Kabelsalat in verschiedenen Querschnitten, einiges in 3phase (5 Leiter) usw...
+
+ *Benötigte Sicherungsautomaten:
+ [[2x B10A Automat|https://secure.reichelt.de/?ARTICLE=155578]]
+ [[1x C16A Automat für USV|https://secure.reichelt.de/?ARTICLE=155582]]
+ [[2x Singlephase Verteilerschiene|https://secure.reichelt.de/?ARTICLE=155614]]
+ [[|]]
+ 
+----
+=== Liste der benötigten/gewünschten Stromkreise ===
+ * Licht großer Raum
+ * Licht kleiner Raum
+ * Licht Werkstatt
+ * Licht Lötraum
+ * Licht Vortragsraum/Lager
+ * Strom & Licht Flur-Küche (z.B. Herdplatten)
+ * Strom großer Raum (z.B. Blinkenlichter, Laptops)
+ * Strom Werkstatt (z.B. Stichsäge)
+ * Strom Fräse
+ * Strom Lötraum (z.B. Oszilloskop, Lötkolben)
+ * Strom Vortragsraum/Lager (z.B. Beamer, Laptops, Lötworkshop)
+ * Dauerstrom (Server, WLAN, Hutschiene)
+ * Notstrom (USV für Alarm, Server, WLAN, Hutschiene, Rotlicht am Boden) 
+
+=== Wünsche ===
+
+Hier bitte Wünsche für Anschlüsse hinterlassen [mit Raum und wo im Raum, ob Dauer-An oder nicht]

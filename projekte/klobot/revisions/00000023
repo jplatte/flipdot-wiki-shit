@@ -1,0 +1,34 @@
+Der klobot ist ein Teil der [[Neuland/Cyber/|Hackerspace Kybernetik]].
+
+== Hacker ==
+ * Dennis (Projektmanagement)
+ * Wolfi (Lüfter)
+ * Jonas (Spiele Engine, Pi)
+ * Jaro (Kapazitiver Sensor, Arduino)
+ * Malte (Lüfter, Monitor)
+ * Felix (google dreams)
+
+== Aktueller Stand ==
+ * Industrielüfter bläst Gerüche aus dem Dach hinaus
+ * Bewegungsmelder (montiert, verkabelt, "Besetzt"-Status noch nicht)
+ * Monitor (montiert, verkabelt)
+ * Kabel für Türsensor (unangeschlossen)
+ * Berührungsfreies Interface mit Arduino! (unangeschlossen)
+ * Raspberry Pi mit VGA Adapter (vorerst mit RetroPi bespielt)
+ * Stromversorgung (Wanddurchbohrung)
+
+== Final Form ==
+ * Bewegungsmelder startet Lüfter, Spiel und Monitor.
+ * Klo-Highscore wird auch per Interface eingebbar
+ * Interface neben dem Klo zum Spielen des Klo-Spiels
+ * Türsensor an Klotür misst, ob abgeschlossen ist
+ * Leuchtschild zeigt "Besetzt"-Status im großen Raum
+ * Papierspender/-zähler meldet den Nachfüllbedarf und entsorgt leere Klorollen durch Schwerkraft
+ * Cooles Schwarzlicht für Cybertoilette
+ * Messung der Sitzungszeit. Wenn > 30 sec., nach dem Spülen Notification: "Bitte Toilette reinigen", um die Klobürste und um den WC - Reiniger herum blinken LED, bis beide aus ihren Sensorhalterungen entnommen und benutzt worden sind.
+
+== Fehlende Komponenten ==
+ * [[https://github.com/flipdot/shit]] das Spiel
+ * Papierspender/-zähler (funktionierendes Design und Zählelektronik)
+ * 220V Relais, dass den Bewegungsmelder auslesen kann für Besetzt-Schild
+ * V Trichter oberhalb vom Lüfter im Blechrohr (max. 10°, möglichst glatt -> 3d Druck?)

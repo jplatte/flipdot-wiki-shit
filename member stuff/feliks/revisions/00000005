@@ -1,0 +1,16 @@
+== Ideen ==
+=== Split Flap Display ===
+ * Selbstbau
+   * {{attachment:splitflap.png}}
+   * Eigenbau: [[https://github.com/scottbez1/splitflap]]
+ * Mehrere Fallblattanzeigen nebeneinander
+   * Nachrichten via IRC anzeigbar
+
+== Notizen ==
+=== Auto-OP (Freenode) ===
+{{{
+/msg chanserv flags #flipdot $NICKNAME +oOF
+o currently Op
+O auto Op
+F founder
+}}}

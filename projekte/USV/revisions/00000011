@@ -1,0 +1,25 @@
+= Unterbrechungsfreie Stromversorgung =
+
+Die USV soll dazu dienen, den [[Server]] mit Notstrom zu versorgen, damit dieser sanft herunterfahren kann. Weiterhin sollen folgende Systeme möglichst lang am Leben gehalten werden:
+ * Türschloss (inkl. GSM Modul)
+ * Telefon (Anrufbeantworter)
+ * Alarmanlage (Sensoren und Aktoren)
+ * Internet und Core-Netzwerk
+
+Andere Systeme mögen es ebenfalls nicht, wenn sie "hart" ausgeschaltet werden, sie benötigen ein sanftes Herunterfahren:
+
+ * Beamer [Kommentar von Wolfi: Der kommt mir aber nicht mit an die USV...]
+ * Raspberry Pis (z.b. Blinkenlights) [Kommentar Wolfi: Es können gerne alle Raspis die in der Nähe vom Netzwerkschrank montiert sind mit über die USV versorgt werden. Wenn habe ich sowieso vor da noch 'n Ein-Netzteil-Für-Alles aka modifiziertes ATX-Netzteil für die Versorgung von allen 12V/5V/3.3V Dingen da zu basteln. Das aber erst, wenn das mit der Elektroinstallation fertig ist.]
+
+''siehe auch andere [[Projekte]]''
+
+
+== Reanimation ==
+[[typ_o]] hat noch eine alte USV bei sich zu Hause, die er dafür spenden wollte. Es handelt sich wohl um eine SmartUPS1000 von APC. [[https://secure.reichelt.de/?ARTICLE=26560|Diese Akkus]] könnten dazu dienen, die USV wieder fit zu machen. Kostenpunkt: `2x ~40€ = 80€`
+
+
+== Beteiligte ==
+
+ * typ_o
+ * malled
+ * Wolfi

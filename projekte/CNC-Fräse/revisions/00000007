@@ -1,0 +1,44 @@
+=== Feature requests ===
+ *Bearbeitbares Material: Bis 2,5mm Al, 
+ *Arbeitsbereich >= 400 x 600, Z?
+ *Saugeranschluß
+ *Spindel besser als Proxxon, Kress Fräse oder gleich HF Spindel
+ *Steuerung: So simpel wie möglich, weil hier der meiste Lernaufwand und Hürde füe Neulinge liegt (vgl. grbl Steuerung aus c't Hacks)
+
+
+== Bauen, Bausatz, Fertig? ==
+ *soll schnell fertig sein
+ *niemand der viel Zeit zum konstruieren hat
+ *mechanische Skills begrenzt
+ *Werkzeug extrem begrenzt
+================
+Fertig kaufen
+
+
+=== Etat ===
+ * 1k Spende
+ * 1,5k Eigenmittel
+
+
+=== Links ===
+ *[https://www.stepcraft-systems.com/]
+ *[http://www.ebay.de/itm/NEU-3-ACHSEN-6040-CNC-ROUTER-GRAVIERGERAT-BOHREN-FRASEN-GRAVURMASCHINE-b8-/290771237919]
+ *[http://www.sorotec.de/shop/index.php]
+ *[http://www.cnc-kompakt.de/index.php]
+ *[http://www.erz-fraesmaschinen.de/]
+ *[http://www.team-haase.de/] 
+ *[http://cnc-modellbau.net/html/cnc-maschinen.html]
+ *[http://www.openbuilds.com/builds/openbuilds-ox-cnc-machine.341/]
+ *[http://www.openbuilds.com/builds/routy-cnc-router-v-slot-belt-pinion.101/]
+ *[http://myhobby-cnc.de/?Projekte:WoodPecker_ALU] 
+
+=== Vergleich ===
+||<#FFFF00> Hersteller||<#FFFF00> Modell||<#FFFF00> Arbeitsbereich||<#FFFF00> Arbeitsspindel||<#FFFF00> Kosten||<#FFFF00> Kommentar||
+||Stepcraft||[[https://www.stepcraft-systems.com/cnc-3d-systeme/stepcraft-600|600]]||420 x 600 x 80||keine||1200 Bausatz||||
+||Stepcraft||[[https://www.stepcraft-systems.com/cnc-3d-systeme/stepcraft-600|600 CK RTR mit USB]]||420 x 600 x 80||keine||1500 fertig||||
+||China||[[http://www.ebay.de/itm/NEU-3-ACHSEN-6040-CNC-ROUTER-GRAVIERGERAT-BOHREN-FRASEN-GRAVURMASCHINE-b8-/290771237919 | 6040]]||750 x 450 x 20||0.8KW VFD spindle||1000 + 640 Versand?||Ungenaue Teile, Probleme beim Zusammenbau, mechanisch weich||
+||BZT||[[http://www.sorotec.de/shop/product_info.php/info/p2759_bzt-pf750-p---kugelumlaufspindeln.html|BZT-PF750-P]]||650 x 430 x 110||keine||2380||||
+||ERZ||[[http://www.erz-fraesmaschinen.de/html/erz-nc_500.html|520 x 320 x 120]]||620 x 420 x 120||keine||1900||||
+||Haase||[[http://www.team-haase.de/maschinen/cut2500|CUT 2500M]]||600 x 420 x 110||keine||2600 Bausatz ohne Elektronik||||
+||Pro-Basic||[[http://www.cnc-modellbau.net/shop/product_info.php?pName=portal-fr%E4se-probasic-h-0605-fertig-aufgebaut&cName=cncmaschinen-probasic-0605|H 06/05]]||600 x 500 x 100||keine||2100||Pro-Basic mechanisch weich (Forum)||
+||Pro-Basic||[[http://www.cnc-modellbau.net/shop/product_info.php?pName=probasich-1005-montiert&cName=cncmaschinen-probasic-1005|H 10-05]]||1000 x 500 x 100||keine||2150||||

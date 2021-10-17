@@ -1,0 +1,12 @@
+Mit Grafana können wir die gemessenen Daten des Spaces darstellen und analysieren.
+
+== Daten ==
+ * Eingeloggte member im WLAN (security by obscurity)
+ * Eingeloggte Nutzer im flipdot Freifunk
+ * Stromverbrauch
+ * Bewegungsmelder (pro Raum)
+ * Toiletten Besetzt/Freistatus
+ * Toilettenpapierstand
+ * Getränkefüllstand (pro Getränkesorte)
+ * CO2 Werte
+ * Lautstärke (pro Raum)

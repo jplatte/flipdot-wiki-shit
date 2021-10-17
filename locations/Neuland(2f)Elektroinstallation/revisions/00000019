@@ -1,0 +1,63 @@
+= Elektroinstallation FlipDot =
+----
+=== Fakten: ===
+ *Zählerschrank ist bei der Künstlerin im EG.
+ *UV Oben im Flur ist an Zähler rechts oben angeschlossen, Vorzählerabsicherung 3x50A
+ *UV Unten im Treppenhaus ist an Zähler rechts unten angeschlossen, Vorzählersicherung 3x50A
+ *An "UV Oben im Flur" kann man anklemmen - wahrscheinlich Fi durch 40A Automaten ersetzen - oder 40A Schraubsicherungen (besser).
+---- 
+=== Stromkreise: ===
+ *Fi1: [40A 1phase Condor 0.03A] => Core-Infrastruktur [DAUER-AN]
+     1.  B16A => Interne Steuerung [Schütz?, Relais und Co]
+     2.  B16A => USV [Notstrom] (EVENTUELL EIN C AUTOMAT EINBAUEN????)
+     3.  B16A => Notbeleuchtung
+     4.  B16A => [RESERVE]
+     5.  B16A => [RESERVE]
+     6.  B16A => [RESERVE]
+ *Fi2: [40A 3phase hager 0.03A] => Lötraum + Werkstatt
+     #7.  B16A => Licht Lötraum+Werkstatt
+     8.  B16A => Steckdosen Lötraum
+     9.  B16A => Steckdosen Werkstatt
+     10. B16A 3phase => Drehstrom Werkstatt [nicht angeschlossen]
+     11. B16A => 
+     12. B16A => 
+     13. B16A => 
+     14. B16A => 
+     15.
+     16.
+     17.
+     18.
+     19.
+     20.
+ *Fi3: [40A 3phase hager 0.03A] => Küche & WC
+     
+ *Fi4: [to-buy: 1phase/3phase 0.03A] => Lounge/Wohnzimmer
+     99. B16A 3phase => Küche 3phase für Herd
+     99. B16A => Küche (reguläre Steckdosenparty)
+     99. B10A => Klobot und Co
+ *Fi5: [to-buy: 1phase/3phase 0.03A] => Vortragsraum
+ *Fi6: [to-buy: 1phase 0.03A] => Licht Überall
+     99. B10A => Licht Lötraum
+     99. B10A => Licht Werkstatt
+     99. B10A => Licht Lounge 
+     99. B10A => Licht Vortragsraum
+
+----
+=== Stromkreise ===
+ * Licht großer Raum
+ * Licht kleiner Raum
+ * Licht Werkstatt
+ * Licht Lötraum
+ * Licht Vortragsraum/Lager
+ * Strom & Licht Flur-Küche (z.B. Herdplatten)
+ * Strom großer Raum (z.B. Blinkenlichter, Laptops)
+ * Strom Werkstatt (z.B. Stichsäge)
+ * Strom Fräse
+ * Strom Lötraum (z.B. Oszilloskop, Lötkolben)
+ * Strom Vortragsraum/Lager (z.B. Beamer, Laptops, Lötworkshop)
+ * Dauerstrom (Server, WLAN, Hutschiene)
+ * Notstrom (USV für Alarm, Server, WLAN, Hutschiene, Rotlicht am Boden) 
+
+=== Wünsche ===
+
+Hier bitte Wünsche für Anschlüsse hinterlassen [mit Raum und wo im Raum, ob Dauer-An oder nicht]

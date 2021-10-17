@@ -1,0 +1,43 @@
+Wir brauchen noch folgendes im Space...
+
+--(Durchgestrichenes)-- wurde bereits gekauft/bestellt oder ist bereits vorhanden.
+
+== Elektronik ==
+=== Kleinteile ===
+ * 220V Relais zum Messen von Bewegungsmelder Signalen ([[https://www.conrad.de/de/printrelais-230-vac-17-a-1-wechsler-song-chuan-888h-1ccfce-220240-1-st-502284.html|4,73€]])
+ * --(Knipex 74 06 200)--
+ * --(Hirschmannklemmen)--
+ * Schrumpfschlauch?
+ * --(ESD Armbändchen und Erdungskabel (Eigenbau))--
+  * Im Space gibt es schon eine ESD-Matte mit Armbändchen. Wird nur nie benutzt.
+ * [[http://www.aliexpress.com/item/J34-Free-Shipping-100pcs-lot-Photoresistor-GL5528-LDR-Photo-Resistors-Light-dependent/32257732335.html?spm=2114.01010208.3.10.pxkkSt&ws_ab_test=searchweb201556_0,searchweb201602_1_505_506_503_504_301_10034_10020_502_10001_10002_10017_10005_10010_10006_10011_10003_10021_10004_10022_10009_401_10008_10018_10019,searchweb201603_8&btsid=3426dcdc-3c90-46dc-a9bb-3f9e82a2ef90|Photowiderstände]]
+ * --(WICHTIG: Batterie für Türklingel: 12V V23GA/MN21/R23A/K23A/LRV08/LR23 https://secure.reichelt.de/?ARTICLE=28010 => Am Besten gleich mehrere bestellen...kosten ja nicht sonderlich viel)--
+  * ''Bestellt am 24.04.16''
+ * Batterien AAA für Funktastatur und Maus
+ * Arduinos
+ * Sortierte Widerstände
+ * GPIO2VGA Adapter für Pis
+
+== Elektroinstallation ==
+
+ siehe [[Neuland/Elektroinstallation#Needs]]
+
+ * Kabel 2.5mm^2
+ * --(Sicherungskastenbox (oder ist noch irgendwo irgendwas vorhanden? Nachgucken!))-- Sicherungskasten hängt
+ * --(kleinerer Kabelkanal(?) <= nochmal gucken ob nicht schon vorhanden/ausreichend da)-- besorgt und verlegt
+
+== Werkzeug ==
+'''Liste wird auf Papier in der Werkstatt geführt''' und dann hierher übertragen [[Neuland/Neuware#Werkzeug|(siehe auch)]]
+ * Standbohrmaschine? +1
+ * Schleifmaschine - eine reicht, vermute Tellerschleifen könnte geeignet sein
+  * Schwingschleifer?
+  * Bandschleifer? --(hm, eher selten nötig?!)-- doch für Werkstücke aus Holz zum draufdrücken
+  * Tellerschleifer (um Platinenkanten gerade abzuschleifen)
+
+== Anderes ==
+ * --([[http://www.ebay.de/itm/400821942473|Maus und Tastatur]])--
+ * --(Einbautürschloss?)--
+ * --(Haushaltsschwämme)--
+ * --(Verbandskasten (is da, aber abgelaufen 2015))--
+  * [[http://www.amazon.de/Söhngen-Pflasterspender-aluderm--aluplast-orange/dp/B001D5KHU4/ref=sr_1_12?ie=UTF8&qid=1463297528&sr=8-12&keywords=pflasterspender|Pflaster zum Auffüllen]] (weil kleinere Verletzungen häufiger vorkommen)
+ * --(Dübel & Schrauben (in verschiedenen)-- --(Geschmacksrichtungen)-- --(Längen)--

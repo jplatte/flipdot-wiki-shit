@@ -1,0 +1,12 @@
+== Ideen ==
+=== Split Flap Display ===
+[[https://github.com/scottbez1/splitflap]]
+
+== Notizen ==
+=== Auto-OP (Freenode) ===
+{{{
+/msg chanserv flags #flipdot $NICKNAME +oOF
+o currently Op
+O auto Op
+F founder
+}}}

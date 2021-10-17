@@ -1,0 +1,30 @@
+ == How-To Tuer ==
+
+ * Account im LDAP erstellen
+  kann jeder Member fuer dich tun
+  https://ldap.flipdot.space  
+  nur im space erreichbar
+ 
+ * nach drittem Mitgliedsbeitrag beim Kassenwart (@cfstras) melden
+  dann schaltet er dich frei
+
+=== Oeffnungsmethoden ===
+
+Webinterface
+https://door.flipdot.space
+
+
+SSH-Public-Key auf https://ldap.flipdot.space eintragen, und dann
+{{{#!bash
+ssh opendoor@door.fd
+}}}
+
+
+RFID-Karte
+Dazu melde dich bitte bei @typ_o oder @malled
+
+
+=== Türstatus icons für spaceapi ===
+
+||[[attachment:fdclosed.png|geschlossen]] || {{attachment:fdclosed.png|closed}}||
+||[[attachment:fdclosed.png|offen]] || {{attachment:fdopen.png|open}}||

@@ -1,0 +1,94 @@
+Was wir so in Neuland machen könnten
+
+Essen / Trinken
+ 
+ * Camping Herdplatten (2 Induktionsplatten im Moneypoint ca. 80 €)
+ * Friteuse für volle Bäuche bei vollem Dienstag (Selbstbau, [[http://www.ebay.de/itm/161516000287|Kaufvorschlag]])
+ * Pizzaofen vor der Tür bauen (Mit einem [[http://www.grillsportverein.de/forum/threads/heute-mal-angefangen-mit-dem-bau.172847/|Fass bzw. Stahlrohr]] [Alte Ziegelei? Schrottplatz?])
+ * Ofen für Pizza und mehr
+ * Flurküche mit Abluft und Kochplatten, Küchenschrank mit Geschirr, Spüle, Kaffeemaschine, Geschirrspüler etc.
+ * Abluftanlage mit Filter und schallgedämpften Rohr direkt gerade von  Flurküche durch kleinen Raum und Werkstatt aus dem Werkstattsfenster  leiten
+
+Hygiene kann Leben retten
+
+ * Mülleimer der Nachrichtenmeisterei -> [[Neuland/muell]]
+ * Klo putzen gegen Getränkeguthaben
+ * --(Monatliche)-- Tägliche "Clean Space Hour"
+
+Licht und Lichtdeko
+
+ * [[http://flipdot.org/wiki/Neuland/Ideen/rgblicht|RGB Licht]] im großen Raum oder im Lager
+ * [[http://flipdot.org/wiki/Neuland/Ideen/sejmlicht|Licht wie im Sejm]] im Seminarraum/Lager
+ * Fensterfront im goßen Raum mit Holzplatten verkleiden und dahinter  Blinkenlights nach draussen, sowie Flipdotdisplay nach innen zeigend.
+ * Angenehmes dimmbares weißes Licht auf das Kabelregalbrett
+ * Bioluminiszente Noctiluca scintillans (Meeresleuchttierchen) in ein Aquarium im Raumtrenner-Regal
+ * Gemeinsames LED Display
+ * UV-Licht Tischtennisplatte
+ * bewegliches Leuchtschild für Besucher
+
+Netzwerk / SteuernMessesRegeln / Roboter / IT Ausrüstung
+
+ * 3m Satellitenschüssel zum 'Sonne abhören' auf dem Dach
+ * Richtfunk auf dem Dach
+ * SDR für Antenne auf dem Dach
+ * Server mit Gigabitleitung
+ * local-only Datenschleuder-NAS
+ * Türschloss, Heizung, Licht, Alarm, Flipdotdisplay, Fernseher, Stromzähler ... alles an den Spacebot verbinden. Kybernetik!
+ * CO2-Sensor zum Messen und Steuern des Fensters / der Abluft ([[http://www.amazon.de/TFA-Dostmann-CO2-Messger%C3%A4t-AirCO2ntrol-mini/dp/B00TH3OW4Q/275-5021298-1043237?ie=UTF8&linkCode=as2&redirect=true&tag=mobilemacs-21|Das]], hier[[https://hackaday.io/project/5301-reverse-engineering-a-low-cost-usb-co-monitor|gehackt]])
+ * Kleiner autonomer Staubsaugerbot als Maskottchen
+ * Bessere spaceeigene Laptops oder Desktop-PCs (Surfen, Platinenplanen, 3D-Modellieren, etc.)
+ * Frittenautomat
+
+Irgendwas mit Medien
+
+ * Beamerprojektion vielleicht an die Außenwand gegenüber der Sofaecke?
+   * Wandfarbe ist extrem schlecht reflektierend. Rollo-Leinwand an der Decke eignet sich besser.
+ * Umgebautes Retro-Analog-Telefon mit eigener Telefonnummer und digitaler Schnittstelle
+ * Gemeinsames Soundsystem mit Liquid Democracy Playlist
+
+Geld und Bezahlsysteme
+
+ * Gäste Spendenbox am Eingang
+ * Digitale Lagerlogistik mit Scanner für Getränkebestellung
+ * Digitales Bezahlsystem (Mag ich persönlich nicht so)
+
+Zugangssystem / Schlösser / Security
+
+ * Sprechanlage für die Tür (die wegen klau immer zugezogen sein soll, sagt Cristoph)
+ * oder das GSM Türschloss für Voice anrufbar machen
+  * Eventuell  einfach eine Prepaidkarte auf den Club bestellen (Netzclub?)  welche  man dann anrufen kann? Oder einfach eine sipgate Rufnummer  klicken und  dann auf einem VoIP Phone (geht auch in software)  realisieren. Weil  Mobiltelefon hat ja eh jeder [wohl wenn dann eher  alsÜbergangslösung  bis man eigene Kabel gezogen hat...].
+   * In dem alten GSM Türschloss ist ne Prepaidkarte von mir drin - die kann man auch anrufen [[https://flipdot.vega.uberspace.de/wiki/typ_o|(typ_o)]]
+ * Display-Türschild
+ * Analog-Klingel mit Seil runter zur Erdgeschosstür
+ * Vernebelungsanlage, Zufalls-Stroboskop und Sirene gegen Einbrecher
+ * Infarotlicht-Blender gegen ungefragte Smartphonephotos
+ * Lichtschranke zum Zählen der Spacebevölkerung
+ * Aluhutraum (unabörbar mit Faradayschem Käfig)
+
+Möbel / Raumfunktionen
+
+ * Raumtrenner-Regal könnte man zur besseren Schallisolierung und Stabilität mit transparenten Rückwänden ausstatten, die Zugriff von beiden Seiten zulassen und die Blickachse durch die Tür zur Lötstelle ermöglichen.
+ * Rucksackablage im untersten hohen Fach des Raumtrenner-Regals?
+ * Motor für Fensterheber vielleicht aus alter Bohrmaschine bauen?
+ * Großer Opensource-Tisch mit Elektroanschlüssen und Drehstühlen, dahin wo vorher die Theke stand?
+ * Werkzeugsortierplatten über die Löt-Tische an die Wand schrauben
+ * Touchdisplays als Spacebot Interface in jeden Raum (Steuerung Licht etc.)
+ * Schmales Lackrack oder zumindest Fliesentisch  zum Füsse ausstrecken für die Sofaecke
+ * Vielleicht lieber kleinen Lagerraum nebenan mieten, für Stühle, Bastelwertstoffe etc. (günstiger als großer Kinoraum)
+ * Kinoraum mit modularen Sofatreppen die auch als Tische nutzbar sind
+ * Hollywoodsofa zum Schaukeln
+ * Leicht  erhöhte Plattform in der Ecke im  großen Raum mit rollbaren Kisten  darunter und Sitzgelegenheiten darauf (z.B. Hollywoodsofa)
+ * Kickertisch mit Robotergegner
+ * Antischallsystem zur Lärmminderung
+ * Gitter über der Sofaecke für Kabelfoo (Vielleicht überflüssig wenn man  die Elektrozugänge an das Lackrack bastelt und die Zuleitung dahin am  Boden führt)
+ * 3D-Spacebotmagnet der per Seilzug unter der Decke hängt und beliebige Orte im Raum anfahren kann (Transport von Bierflasche?!)
+
+Werkstatt
+
+ * Standbohrmaschine in der Werkstatt
+ * Auflagefläche in der Werkstatt zum Sägen für Rechtshänder (Vielleicht Böcke)
+ * Umfangreiches Ersatzbohrerset
+
+Aktionen / Vorträge
+
+ * Freifunk Mesh bei den Nachbarn vorstellen

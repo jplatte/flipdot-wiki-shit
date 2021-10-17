@@ -1,0 +1,28 @@
+Wir haben im Space zwei 3D-Drucker stehen. Einer gehört dem Space selbst, der Andere gehört [[DmB]]. Wenn du mit dem Space-Drucker drucken willst, les hier einfach ein Mal den Artikel durch, aber wenn du [[DmB's|DmB]] Drucker benutzen willst, frag ihn vorher.
+
+= Software =
+Um mit einem 3D-Drucker zu drucken, benötigt man eine Software-Pipeline, bei der am Ende eine [[https://en.wikipedia.org/wiki/G-code|GCode-Datei]] erzeugt wird. Diese Datei beinhaltet die Steuerbefehle, mit denen der Druckkopf bewegt wird, und der Drucker allgemein weiss was zu tun ist. Eine übliche Pipeline schaut aus wie folgt:
+ * NURBS-/Mesh-basierte Datei erstellen
+   * innerhalb eines beliebigen 3D-Modellierungsprogramms
+     * [[https://www.blender.org/download/|Blender]] (Cross platform)
+     * [[http://www.rhino3d.com/download/|Rhinoceros]] (Windows)
+     * ...
+   * im Format des jeweiligen 3D-Modellierungsprogramms erstellen
+ * [[https://en.wikipedia.org/wiki/STL_(file_format)|Stereolithographie-Datei (.stl)]] exportieren
+   * speichert das Objekt im Mesh-Format und korrektem Maßstab
+ * in GCode-Befehle umwandeln
+   * Cura
+   * Slic3r
+   * ...
+
+== Cura ==
+''[[https://ultimaker.com/en/products/cura-software|Cura]]'' ist freie(?) Software, mit der man Mesh-basierte 3D-Daten in GCode umwandeln kann. Du kannst die bereits dafür angelegt [[attachment:flipdot.curaprofile|.curaprofile-Datei]] verwenden, die die richtigen Einstellungen für den Space-Drucker hat.
+
+Um ''Cura'' zu verwenden brauchst du einen Rechner dessen GPU mit OpenGL 2.0 kompatibel ist, ansonsten kriegst du folgenden Fehler:
+
+{{{
+Could not probe OpenGL. This program requires OpenGL 2.0 or higher. Please select your video card drivers.
+}}}
+
+== Slic3r ==
+''[[http://slic3r.org/download|Slic3r]]'' ist ähnlich wie ''Cura''. Kann sein, dass die {{{.curaprofile}}}-Dateien importierbar und verwendbar sind. Wenn du ein bisschen damit experimentiert hast, melde dich am Besten bei DmB, oder einem anderen 3D-Druck-Menschen.

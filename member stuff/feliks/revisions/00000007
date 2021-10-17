@@ -1,0 +1,27 @@
+== Ideen ==
+=== Split Flap Display ===
+ * Selbstbau
+   * {{attachment:splitflap.png}}
+   * Eigenbau: [[https://github.com/scottbez1/splitflap]]
+ * Mehrere Fallblattanzeigen nebeneinander
+   * Nachrichten via IRC anzeigbar
+
+=== RGB 16 Segment ===
+ * {{attachment:rgb16seg.jpg|width=300px}}
+ * [[https://hackaday.io/project/7869-rgb-16-segment-led]]
+ * 3D-Druck
+
+== Notizen ==
+=== Auto-OP (Freenode) ===
+{{{
+/msg chanserv flags #flipdot $NICKNAME +oOF
+o currently Op
+O auto Op
+F founder
+}}}
+
+=== Auto-Voice (Freenode) ===
+{{{
+/msg chanserv flags #flipdot $NICKNAME +V
+V auto voice
+}}}

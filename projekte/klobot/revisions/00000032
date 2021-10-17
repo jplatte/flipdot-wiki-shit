@@ -1,0 +1,43 @@
+Der klobot ist ein Teil der [[Neuland/Cyber/|Hackerspace Kybernetik]].
+
+== Hacker ==
+ * Dennis (Projektmanagement)
+ * Wolfi (Lüfter)
+ * Jonas (Spiele Engine, Pi)
+ * Jaro (Kapazitiver Sensor, Arduino)
+ * Malte (Lüfter, Monitor)
+ * Felix (google dreams)
+ * Helmut (blinkenbürste)
+
+== Aktueller Stand ==
+ * Industrielüfter bläst Gerüche aus dem Dach hinaus
+ * Bewegungsmelder (montiert, verkabelt, "Besetzt"-Status noch nicht)
+ * Monitor (in Sichthöhe montiert, verkabelt)
+ * Kabel für Türsensor (unangeschlossen)
+ * Berührungsfreies Interface mit Arduino! (unangeschlossen)
+ * Raspberry Pi mit VGA Adapter (vorerst mit [[http://deepdreamgenerator.com/|google dreams]] bespielt)
+ * Stromversorgung (Wanddurchbohrung)
+ * Cooles Schwarzlicht für Cybertoilette
+
+== Final Form ==
+ * Bewegungsmelder startet Lüfter, Spiel und Monitor.
+ * Klo-Highscore wird auch per Interface eingebbar
+ * Interface neben dem Klo zum Spielen des Klo-Spiels
+ * Türsensor an Klotür misst, ob abgeschlossen ist
+ * Leuchtschild zeigt "Besetzt"-Status im großen Raum
+ * Papierspender/-zähler meldet den Nachfüllbedarf und entsorgt leere Klorollen durch Schwerkraft
+ * Messung der Sitzungszeit. Wenn > 30 sec., nach dem Spülen Notification: "Bitte Toilette reinigen", um die Klobürste und um den WC - Reiniger herum blinken LED, bis beide aus ihren Sensorhalterungen entnommen und benutzt worden sind.
+
+== Fehlende Komponenten ==
+ * [[https://github.com/flipdot/shit]] das Spiel
+ * Papierspender/-zähler (funktionierendes Design und Zählelektronik)
+ * 220V Relais, dass den Bewegungsmelder auslesen kann für Besetzt-Schild
+ * Drucktaster im Schloss
+ * vielleicht 2 Lüfter verbauen, die mit einem Y-Rohr Adapter addiert werden
+ * V Trichter (Diffusor) oberhalb vom Lüfter im Blechrohr (max. 10°, möglichst glatt -> 3d Druck?)
+ * Anströmdüse vor dem Ventilator
+
+== Infos ==
+ * http://www.trox-tlt.de/de2/service/download_center/structure/Fachartikel/07fachartikel_grundlagen_der_ventilatorentechnik.pdf (siehe Seite 11)
+ * Maltes Lüfter hat 130 CFN, der verbaute von Wolfi 160 CFN ([[http://www.endmemo.com/sconvert/m3_hft3_min.php|= 271]] m³/h, Vgl. [[http://www.obi.de/decom/product/OBI_Ventilator_Air-Style_System_125/5168265|Baumarktlüfter 165 m³/h 76€]])
+ * Github Repository: https://github.com/flipdot/shit

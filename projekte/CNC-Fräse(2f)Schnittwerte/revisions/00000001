@@ -1,0 +1,49 @@
+= Fräsertypen =
+Nach Material
+
+ * [[https://de.wikipedia.org/wiki/Schnellarbeitsstahl|Schnellarbeitsstahl]] (HSS oder nach neuer Normung HS) HSS sind sehr wärmeempfindlich, für Metall (Wärmeabfuhr über Späne & Kühlmittel)
+ * [[https://de.wikipedia.org/wiki/Hartmetall|Hartmetall]] (VHM sind Vollhartmetallwerkzeuge. Also alles besteht aus diesen Werkstoff=Schaft + Schneiden. HM sind Werkzeuge wo der Schaft und die Schneiden aus unterschiedlichen Werkstoffen bestehen) (HW = engl. "hardmetal for wood")
+
+Nach Zweck
+
+ * [[https://de.wikipedia.org/wiki/High_Performance_Cutting|HPC]] (High Performance Cutter) = Schruppen
+ * Schlichten
+
+== Alu ==
+Unbeschichteter HSS E Fräser Zweischneider
+
+Kühlen mit wenigen Tropfen Spiritus
+
+== Holz ==
+Holz fräsen -> nur mit speziellen Holzfräsern aus Hartmetall, wie sie z.B. bei Oberfräsen in der Tischlerei verwendet werden. Diese Fräser sind auch wesentlich billiger als HSS-Fräser mit Titannitrid-Beschichtuing.
+
+Drehzahlrechner http://www.cenon.de/cgi-bin/ToolCalc?lng=de http://www.precifast.de/schnittgeschwindigkeit-beim-fraesen-berechnen/
+
+Fräser kaufen http://www.sorotec.de/shop/Zerspanungswerkzeuge/3-175----1-8---Fraeser/1-Schneider/
+
+= Schnittgeschwindigkeiten (Drehzahl, Zustellung, Vorschub) =
+Erfahrungswerte
+
+== Holz (MDF, Multiplex, Sperrholz, Siebdruckplatte) ==
+ * 6 mm HM-Fräser,
+  * Drehzahl ca "7"
+  * Vorschub 2000 mm / min
+  * Eintauchgeschwindigkeit 200 mm /min
+  * Zustellung max 6 mm (Materialabnahme in einem Durchgang)
+
+== Alu ==
+ * 3 mm HM-Fräser (Farbring)
+  * Drehzahl ca "4"
+  * Vorschub 400 mm / min
+  * Eintauchgeschwindigkeit 200 mm /min
+  * Zustellung max 1,5 mm (Materialabnahme in einem Durchgang)
+  * Kühlen mit mäßig Spiritus (Sprühflasche) Obacht: Sprühnebel -> Fräsmotor -> alles Bäm!
+
+== Kunststoff ==
+ * 3 mm HM-Fräser (Farbring)
+
+ * Drehzahl ca "3-4"
+ * Vorschub 300 mm / min
+ * Eintauchgeschwindigkeit 200 mm /min
+ * Zustellung max 1,5 mm (Materialabnahme in einem Durchgang)
+ * Kühlen mit mäßig Wasser (Spiritus versprödet z.B. Plexiglas) oder ungekühlt

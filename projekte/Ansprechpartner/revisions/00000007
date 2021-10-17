@@ -1,0 +1,48 @@
+== Stromzähler ==
+
+ * Initiator: Helmut Fligge
+ * Ansprechpartner:
+  * Sören Wegener, er hat http://flipdot.wegenerd.de/#/dashboard/db/powerconsumption eingerichtet
+ * Datenquelle: http://infragelb.de/flipdot-power/
+
+== Türschloss ==
+[[Projekte/Tür|Projektseite]]
+ * Initiator: Helmut Fligge?
+ * Ansprechpartner: Helmut Fligge?
+ * Eigener Zugang:
+  * per Handynummer: Helmut Fligge
+  * per flipdot-App: Daniel Huhn
+
+
+== HackerDS (Fernseher) ==
+
+ * Initiator: Daniel Huhn
+ * Ansprechpartner: Daniel Huhn, Sören Wegener
+ * Code: https://github.com/hackerDS
+
+== CAN-Bus ==
+[[Projekte/CANberry|Projektseite]]
+ * Initiator: Helmut Fligge (Hardware), Daniel Huhn (Software)
+ * Code: https://github.com/flipdot/Spacecontrol/tree/master/CanBusServer
+
+== Heizungssteuerung / Thermostat ==
+
+ * Initiator: Malte?
+ * Ansprechpartner: Daniel Huhn, Malte
+ * Code: https://github.com/flipdot/OpenHR20-Firmware
+
+== flipdot.org Webseite ==
+
+ * Initiator: Felix (Blog, Wiki)
+ * Ansprechpartner: Daniel Huhn (Server Zugang, Android App Backend)
+ * Benutzer-Online-Liste: Malte
+
+== Android App ==
+
+ * Initiator: Daniel Huhn
+ * Code: https://github.com/flipdot/android-app
+ * App Store: https://play.google.com/store/apps/details?id=org.flipdot.flipdotapp
+
+== Router/Netzwerk ==
+ * Initiator: Malte
+ * Ansprechpartner: Jannis

@@ -1,0 +1,8 @@
+== IRC ==
+=== Auto-OP (Freenode) ===
+{{{
+/msg chanserv flags #flipdot $NICKNAME +oOF
+o currently Op
+O auto Op
+F founder
+}}}

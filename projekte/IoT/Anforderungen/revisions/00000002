@@ -1,0 +1,33 @@
+Entwurf
+
+== Sensoren ==
+ * Sensoren mit Batteriebetrieb
+ * Batterielebensdauer ~ 1 a
+ * Sensoren schlafen immer, wachen auf durch
+  * mechanischen Vorgang (Tür wird geöffnet)
+  * Schwellwertüberschreitung (Helligkeit < Schwellwert)
+ * Sensoren übertragen entweder
+  * nur eine Transition (Lichtschranke durchschritten, Klingeltaste gedrückt) oder
+  * Transition und neuen Status (Tür wurde bewegt, ist jetzt offen)
+ * Sensoren übertragen ihren Batteriestatus
+ * Sensoren billig
+ * kein Feature Creep
+ * Status von Türen, Fenstern, Geräten (Herde, Fräse, Beamer..) erfassen
+
+== Zentrale / API ==
+ * Status zu einer Zentrale im Space übertragen
+ * Staus zur Space API übertragen
+ * TBD (gibts schon ein Regelwerk zur Benamung, möglichen Messwerten, Raumbezeichnernen?)
+ * Sollen die Sensoren direkt an die Space-Api senden? (Alternative: An  einen lokalen Rechner senden, ggf. in einem separierten Netz für IoT,  auf eine noch zu bestimmende Weise (MQTT?), und von dem Rechner dann  gefiltert und sanitized an die API)
+ * So was wie MQTT würde auch ein späteres Erweitern auf Geräte  erleichtern, die nicht nur Daten senden, sondern immer an sind und  Steuerfunktion haben.
+
+== Verarbeitung ==
+ * TBD (irgendwas zyklisches (Kühlschrank > 5 min geöffnet)?),  Verknüpfungen zw. Sensoren (Heizung = an & Fenster = auf),  Verarbeitung verschiedener Space Stati (Space = zu & Dachluke = auf)
+
+== Aktoren / Melder ==
+ * Aufnahme in den !Status im IRC
+ * Mail an Sensorpaten wenn Batterie alle
+ * Anzeige an der Ausgangstür: Ein Blick - alle Sensoren auf grün,  Space kann geschlossen werden, und / oder akustische Benachrichtigung  wenn noch ein Sensor auf rot steht
+ * Aktionen triggern (Anzeigen am Space-Ausgang: "Dachluken offen", Klopapier alle", "Herd noch an")
+ * Reaktionen auf besondere Zustände (Einbruch o.ä.) Mail, SMS ...
+ * Reaktion auf niedrigen Batteriestand in den Sensoren (Mail..)

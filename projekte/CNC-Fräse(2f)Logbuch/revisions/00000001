@@ -1,0 +1,4 @@
+
+
+= 2015-03-07 GRBL Interpreter aufgebaut =
+[[https://github.com/grbl/grbl|GRBL]] Version 0.9 auf einem Arduino Uno. Gehäuse mit SUB-D 25 Pol besorgt, wo der reinkommt [typ_o]

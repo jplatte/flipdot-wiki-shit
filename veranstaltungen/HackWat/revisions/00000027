@@ -1,0 +1,95 @@
+== Hack mal was im flipdot hackerspace kassel! ==
+ * Wann: 2018-06-01 .. 03, Beginn jeweils ca. 12:00, Ende wenn keiner mehr kann
+ * Wo: Im flipdot, Kassel Hauptbahnhof, [[Kontakt|Anfahrt]]
+
+=== Anmeldung erwünscht! ===
+'''[[mailto://com@flipdot.org|com@flipdot.org]]'''
+
+== Drei Tage lang ist der Hackerspace geöffnet. ==
+ * Workshops und Vorträge (Elektronik, Praxis-Schwerpunkt Verschlüsselung von Dateien und Mail, und vieles mehr)
+ * Werkstätten kennen lernen (Elektronik und Mechanik, Infos zur CNC Fräse und 3D Druck)
+ * Projekte ansehen (Automatisches Getränke- Bestellsystem, Internet of Dings, Blinkenlights, Member-Schließsysteme und viele kleinere Projekte)
+ * Infos zu Software-Projekten und Space Infrastruktur
+ * Mitglieder treffen und kennen lernen
+ * Hackerkompatible Verpflegung
+
+== Flyer ==
+{{attachment:hackwat-0.jpg}}
+
+{{attachment:hackwat-1.jpg}}
+
+Den Flyer gibts auch [[attachment:hackwat.pdf|als PDF]].
+
+== Fahrplan (Version 0.1 "Mett") ==
+Die stabile Version des Fahrplans steht frühestens ab 20. Mai an dieser Stelle. Du hast eine Idee, die du vorstellen willst? Einen Workshop, einen Talk, oder einen ultrakurzen Lightning Talk? !SagWat!: com [aet] flipdot [döt] org.
+
+=== 2018-06-01 Freitag ===
+||<tablewidth="100%">Beginn ||Ende ||Beschreibung ||Raum ||
+|| || ||Eröffnung mit ### ||Raum 4 ||
+|| || ||FreeCAD und Formen die immer schon mal gezeichnet werden sollten [seb] || ||
+||18:00 ||18:45 ||Internet of Dings, batteriebetriebene Sensor Nodes mit ESP8266 (Entwicklung der Hardware) [typ_o] [[#IoD|(Details...)]] || ||
+
+
+=== 2018-06-02 Samstag ===
+||<tablewidth="100%">Beginn ||Ende ||Beschreibung ||Raum ||
+||17:00 ||18:30 ||Build your own Geiger Counter in less than 20 [cr0n] [[#GigeRCounR|(Details...)]] || ||
+||17:00 ||18:00 ||Vortrag: Einführung in TensorFlow [swegener] ||Raum 4 ||
+||18:00 ||20:00 ||Workshop: Irgendwas mit Natural Language Processing [anselm] ||Raum 4 ||
+||20:00 ||20:30 ||Automatisierung der Getränkeversorgung im Space [feliks] [[#AdGiS|(Details...)]] ||Raum 4 ||
+||20:30 ||21:30 ||flipcoin - Howto create your own cryptocurrency [nxb] ||Raum 4 ||
+||22:00 ||23:00 ||The metaphysics of chaos [dmb] ||Raum 4 ||
+
+
+=== 2018-06-03 Sonntag ===
+||<tablewidth="100%">Beginn ||Ende ||Beschreibung ||Raum ||
+||15:00 ||18:00 ||Schlachtfest (Hardware zerlegen, gute Teile identifizieren, ausbauen und retten, Anwendungsbeispiele geben @dmb, @dino0815(?), typ_o ) ||Raum 4 ||
+||18:00 ||18:30 ||Tron Radio - Erfahrungen beim Offenlegen von Software-Quellen am Beispiel eines Webradio Projekts [5V-Junkie] ||Raum 4 ||
+|| || ||Workshop: Festplattenverschlüsselung (Zielgruppe Einsteiger) || ||
+|| || ||Workshop: Einrichtung verschlüsselter Email-Kommunikation, GPG mit [[https://www.mozilla.org/de/thunderbird/|Thunderbird]] und [[https://enigmail.net/|Enigmail]] (cfstras, wegenerd)  (Zielgruppe Einsteiger) || ||
+
+
+= Details zu den einzelnen Veranstaltungen =
+<<Anchor(IoD)>>
+
+== Internet of Dings ==
+Der Talk beschreibt die Schritte zur Entwicklung der Hardware, mit der der Ruhestrombedarf eines batteriebetriebenen Sensors mit einem ESP8266 von 300µA im Sleep Mode durch den Einsatz eines separaten Mikrocontrollers auf 120 nA gesenkt werden konnte.Der ESP wird dabei komplett abgeschaltet, und der Controller Attiny45 durch einen Interrupt bei Betätigung eines Schalters aus seinem Sleep Mode geweckt.
+
+<<Anchor(AdGiS)>>
+
+== Automatisierung der Getränkeversorgung im Space ==
+Es wird das ganze Projekt von Anfang bis Ende beschrieben. Noch besser als [[Projekte/Drinks Storage|bisher im Wiki]] dokumentiert! Mit bisher unveröffentlichtem Bildmaterial! Inklusive Lessons Learned!
+
+<<Anchor(GigeRCounR)>>
+
+== Shut down global economics by building your own Geiger Counter in under 20 ==
+Was? Genau! Wenn man sich so im Internet (oder sonst wo) umschaut, stellt man schnell fest, dass Geiger-Müller Zähler nicht das billigste neue China-Spielzeug sind. In diesem Workshop werden wir uns (eine) eigene Schaltung*en aufbauen, die echte Radioaktivität messen können/kann! Advanced.
+
+Das Herzstück eines Geigerzählers ist seine Zählröhre, die es dank Altbeständen günstig auf diversen digitalen Warenhandelsplattformen zu erwerben gibt.
+
+Der Ablauf sieht wie folgt aus:
+
+ * Theorie:
+  * Was ist (ionisierende) Strahlung?
+  * Wie wird sie vom GM-Zähler gemessen? - Funktionsweise von diesem
+  * Geschichtliches (Wirklich nur ganz kurz versprochen)
+
+ * Praxis:
+  * Interaktive Ausarbeitung einer Umsetzung --> d.h eines Schaltplanes (eine Vorlage liegt bereit)
+  * Es werden Steckbretter genommen und munter drauf los gehackt
+  * Troubleshooting und Tests der fertigen Geigerzähler (Testprobe liegt bereit)
+  * Mobilisierung --> Zähler mit Akkumulatoren betreiben (18650er evtl.) -- Zusatzpunkt A
+  * Daten an Raspi o.ä. senden und verwerten (Diagramme, Datenbänke, etc.) -- Zusatzpunkt B
+
+Unterm Strich kommt man (ohne Materialien der Zusatzpunkte) -  wie der Titel es schon andeutet - mit einem Bruchteil von dem weg, was ein eines solchen äquivalenten für einen kapitalen Wert gehabt hätte.
+
+Weiterhin wäre es förderlich, wenn Ihr nach Möglichkeit folgendes mitbringt:
+
+ * Radioaktive Samples, z.B. Uranglas, Tritium-Gadgets, Uranerz, Leuchtuhren, Nuklid-Batterien, Kernbrennstoff
+ * Kopfhörer o.ä. (Gefahr des Brickens, also seid gewarnt!)
+ * Eine strahlende Erscheinung
+
+Hier wird niemand allein gelassen! Wenn einer von euch eine Denkblockade hat, dann helfen wir uns, werden gemeinsam das Problem lösen und an ihm wachsen!
+
+Sollten es die Mittel zulassen (sehr ungewiß), hat am Ende jeder einen funktionierenden Geigerzähler zum Spielen - und der hat im Falle eines nuklearen Angriffkrieges auf die Sov.. auf jeden Fall kann man nie wissen wann man mal Tschernobyl-Urlaub machen möchte.
+
+Ich, bzw. '''natürlich''' sämtliche Mitglieder des flipdot e.V. freuen sich auf dich! Come over, hack a little but learn a lot!

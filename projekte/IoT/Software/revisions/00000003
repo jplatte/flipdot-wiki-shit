@@ -1,0 +1,18 @@
+Ideensammlung zu Anforderungen
+
+ * Der rote Leuchtmelder im Treppenhaus soll ersetzt werden durch einen Monitor (Oder WS2811-LED Zeile), der eine Liste mit rot / grün Checkboxen zeigt: Alle Sensoren an Fenstern, Türen usw., die vor dem Verlassen des Space geschlossen werden müssen.
+ * Bei Unterschreitung der minimalen Batteriespannung eines Sensors soll der Sensorpate eine Mail bekommen
+ * Bei Auslösen bestimmter Sensoren soll Alarm gegeben werden. Kühlschranktür dauerhaft geöffnet, Wasser in der Küche, Ansprechen Bewegungsmelder bei Status Space = zu? (Stiller Alarm via SMS, Mail?, lauter Alarm?)
+ * Verknüpfungen:
+  * Sensor Klingelknopf außen bewirkt Türöffnung wenn Spacestatus = offen
+  * Sensor Dachluken bewirkt Luken schließen wenn Spacestatus =
+ * Sensor Klopapier alle bewirkt Bestellung bei Amazon (cherz) ... Aber Eintrag in eine Einkaufsliste?!
+ * Anbindung an API:
+  * Verbindung aus IoD Netz ins öffentliche Space Netz und Internet zu diskutieren. Sichere Variante: Physisch nur Datenfluss von Sensoren in andere Netze möglich (Serielle Schnittstelle mit nur einer Leitung, IoT Rechner kann nur nach außen senden)
+  * [[https://github.com/freifunkks/salt-conf/blob/master/state/graphite/fd-spacestats.py#L44-L92|Liste]], welche Sensordaten sollen in Grafana visualisiert werden
+  * Wie läßt sich Steuerung von Aktoren im IoD Netz von außen sicher realisieren? Steuerung welcher Aktoren ist gewünscht?
+   * Heizung
+
+== Attiny ==
+Fuse Settings
+{{attachment:IoD-Fuses-Tiny45.jpg}}

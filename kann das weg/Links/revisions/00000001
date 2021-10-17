@@ -1,0 +1,143 @@
+Gemeinsame Bookmarkseitezu Themen, die im weitesten Sinn zu Flipdot passen
+
+= Blogs / Newsseiten =
+== Überwiegend hardwarebezogen ==
+ * [[http://hackaday.com/blog/|Hackaday]]
+ * [[http://makezine.com/blog/|Make]] (en)
+
+= Statischer Content =
+== Raspberry Pi ==
+
+{{{#!html
+<p>Displays</p>
+<ul>
+<li>China <a href="https://learn.adafruit.com/adafruit-pitft-28-inch-resistive-touchscreen-display-raspberry-pi/overview">TFT setup</a>&nbsp;(Pollin)</li>
+<li>Nokia LCD <a href="https://learn.adafruit.com/nokia-5110-3310-lcd-python-library">Python Lib</a></li>
+<li>Display im <a href="https://community.risevision.com/rise_vision_inc/topics/how_can_i_use_raspberry_pi_on_my_portrait_monitors">Portrait mode</a></li>
+<li>Pollin Display <a href="http://www.heise.de/hardware-hacks/artikel/Touch-Display-fuer-den-Pi-2197895.html">config</a></li>
+<li>Pollin Display anpassen <a href="http://www.mikrocontroller.net/topic/329518#3653730">1</a>, <a href="http://www.forum-raspberrypi.de/Thread-eure-meinung-ist-gefragt-immer-auf-die-kleinen-von-lcds-und-tft-displays?pid=72963#pid72963">2</a></li>
+<li>China <a href="http://www.robosphere.de/bau-dir-deinen-eigenen-touchscreen-pc-fur-100-euro-teil1/">Touch LCD</a> am Pi</li>
+</ul>
+<p>Cameras</p>
+<ul>
+<li>Camera <a href="http://www.designspark.com/knowledge-item/raspberry-pi-camera-setup">setup</a></li>
+<li>USB <a href="http://www.instructables.com/id/Raspberry-Pi-remote-webcam/">Webcam</a></li>
+<li>cam <a href="http://elinux.org/RPi-Cam-Web-Interface">streaming</a></li>
+</ul>
+<p>&nbsp;Wifi</p>
+<ul>
+<li>WiFi Acces Point, Zugriff auf lokalen Server auf dem Pi <a href="http://www.penguintutor.com/news/raspberrypi/wireless-hotspot">1</a>,&nbsp;<a href="http://www.forum-raspberrypi.de/Thread-tutorial-raspberry-pi-accesspoint-mit-lokalem-webserver-betreiben">Accesspoint mit lokalem Webserver</a></li>
+<li>Wifi <a href="http://www.maketecheasier.com/setup-wifi-on-raspberry-pi/">Setup</a></li>
+<li><a href="http://www.raspberrypi.org/phpBB3/viewtopic.php?f=26&amp;t=16054">wifi reconnect on drop</a> (2, <a href="https://github.com/mharizanov/WiFi_Check/blob/master/WiFi_Check">G</a>it)</li>
+<li>Edimax Wifi Dongle: (<a href="http://elinux.org/RPi_edimax_EW-7811Un">1</a>, <a href="http://www.suppertime.co.uk/blogmywiki/2012/09/adding-wifi-to-raspberry-pi-with-edimax-ew-7811un-dongle/">2</a>, <a href="http://www.raspberrypi.org/phpBB3/viewtopic.php?f=36&amp;t=11051">3</a>, <a href="http://www.savagehomeautomation.com/projects/raspberry-pi-installing-the-edimax-ew-7811un-usb-wifi-adapte.html">4</a>)</li>
+</ul>
+<p>Python</p>
+<ul>
+<li>Zur <a href="https://code.google.com/p/raspberry-gpio-python/wiki/Examples">RPi.GPIO</a> für Python</li>
+<li>Interrupts in Python, Teil <a href="http://raspi.tv/2013/how-to-use-interrupts-with-python-on-the-raspberry-pi-and-rpi-gpio">1</a>, <a href="http://raspi.tv/2013/how-to-use-interrupts-with-python-on-the-raspberry-pi-and-rpi-gpio-part-2">2</a>, <a href="http://raspi.tv/tag/multiple-threaded-callbacks-in-rpi-gpio-with-python-on-the-raspberry-pi">3</a></li>
+<li><a href="http://www.codecademy.com/">code academy</a></li>
+<li><a href="http://bascom-forum.de/showthread.php?4913-Serial-Interface-Raspberry-Pi-lt-gt-ATXMEGA-115200-baud">Bascom, Python, Atxmega</a></li>
+<li>Pi <a href="http://www.raspberrypi.org/archives/5672">Camera Python</a> Bibliothek</li>
+<li><a href="http://picamera.readthedocs.org/en/release-1.9/recipes1.html">Pi Cam Basics</a>&nbsp;und viele weitere Infos zur CAM</li>
+<li><a href="http://blog.hekkers.net/2013/04/09/raspberry-pi-p1-smart-meter-packets-and-python/">SmartMeter</a> und Python</li>
+<li>Websockets <a href="http://www.raspberry.bplaced.net/raspberry/web.php/">1</a>, <a href="http://lowpowerlab.com/blog/2013/01/17/raspberrypi-websockets-with-python-tornado/">2</a>, <a href="http://popdevelop.com/2010/03/a-minimal-python-websocket-server/">3</a>&nbsp;<a href="http://developer.mbed.org/cookbook/Websockets-Server">4</a>,&nbsp;<a href="http://www.tutorialspoint.com/python/python_networking.htm">5</a>, <a href="http://stackoverflow.com/questions/3142705/is-there-a-websocket-client-implemented-for-python">6</a>, <a href="http://www.binarytides.com/python-socket-programming-tutorial/">7</a>,&nbsp;<a href="http://www.binarytides.com/python-socket-server-code-example/">8</a>&nbsp;</li>
+<li><a href="http://learn.adafruit.com/debugging-with-the-raspberry-pi-webide">Adafruit Web IDE</a> (Python u.A.) (<a href="http://learn.adafruit.com/category/raspberry-pi">Alle Tutorials</a>)</li>
+<li>Script &nbsp;mit <a href="http://www.raspberrypi-spy.co.uk/2013/07/running-a-python-script-at-boot-using-cron/#more-2067">cron</a>&nbsp;starten</li>
+<li><a href="http://www.forum-raspberrypi.de/Thread-mpd-und-lcd-16x2-anzeige">Signalstärke</a>&nbsp;mit Python anzeigen&nbsp;<a href="http://www.raspberrypi.org/forums/viewtopic.php?f=32&amp;t=85601">2</a></li>
+<li><a href="https://code.google.com/p/webiopi/">WebIOPi</a>, Python Framework zur GPIO Kontrolle, mit Webserver, JS.&nbsp;<a href="http://trouch.com/category/webiopi/">Blog</a>,&nbsp;<a href="https://learn.adafruit.com/raspberry-pi-garage-door-opener/web-io-pi-configuration">Adafruit</a></li>
+<li><a href="http://www.linuxuser.co.uk/tutorials/raspberry-pi-motion-detection">motion</a>&nbsp;detection</li>
+<li>Diagramme&nbsp;<a href="http://oss.oetiker.ch/rrdtool/">RRDtool</a>, <a href="http://matplotlib.org/">matplotlib</a></li>
+<li><a href="http://blog.milsystems.de/2013/08/wie-benutze-ich-die-raspberry-pi-als-qr-code-lesegeraet/">QRCODE lesen </a>mit dem cam module</li>
+<li><a href="http://learnpythonthehardway.org/book/">Learn Python the hard way</a>&nbsp;online - Buch / Kurs</li>
+<li>Mini <a href="http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver">HTTP Server</a></li>
+</ul>
+<p>PHP</p>
+<ul>
+<li>PHP beschleunigen mit <a href="http://kaffeeringe.de/2075/mehr-power-fuer-php-auf-dem-raspberry-pi/">Cache APC</a></li>
+</ul>
+<p>Basic</p>
+<ul>
+<li><a href="https://projects.drogon.net/return-to-basic/rtb-download-and-install/">BASIC</a> für den RasPi</li>
+</ul>
+<p>Security</p>
+<ul>
+<li><a href="http://learn.adafruit.com/onion-pi/">Pi Onion Router</a>, im <a href="http://www.spiegel.de/netzwelt/gadgets/raspberry-pi-tor-router-onion-pi-anonymisiert-surfen-im-web-a-907567.html">SPON</a></li>
+<li>SSH Key <a href="http://marks-space.com/2013/05/20/how-automatically-log-into-a-raspberry-pi/">einrichten</a> <a href="http://jankarres.de/2013/12/raspberry-pi-ssh-schluessel-erstellen-und-passwort-aendern/">2 (einfach)</a></li>
+<li><a href="http://www.fail2ban.org/wiki/index.php/Main_Page">Fail2Ban</a>, bannt IPs nach Login Fehlversuchen etc. für SSH</li>
+<li>SSH absichern (<a href="http://www.strassenprogrammierer.de/ssh-daemon-sshd-gegen-attacken-sichern_tipp_363.html">1</a>, <a href="http://openbook.galileocomputing.de/unix_guru/node222.html">2</a>, <a href="http://www.heise.de/security/artikel/SSH-vor-Brute-Force-Angriffen-schuetzen-270140.html">3</a>, <a href="https://www.debian.org/doc/manuals/securing-debian-howto/ch-sec-services.de.html#s5.1">4</a>, <a href="http://jjjjango.blogspot.co.at/2015/01/secure-your-raspberry-pi.html">5</a>)</li>
+<li>SSH via PHP (<a href="http://phpmaster.com/using-ssh-and-sftp-with-php/">1</a>, <a href="http://kvz.io/blog/2007/07/24/make-ssh-connections-with-php/">2</a>, <a href="http://php.net/manual/en/book.ssh2.php">3</a>, <a href="http://stackoverflow.com/questions/6270419/how-to-execute-ssh-commands-via-php">4</a>)</li>
+<li>20 Linux server <a href="http://www.cyberciti.biz/tips/linux-security.html">hardening tips</a></li>
+<li>Pi als&nbsp;<a href="http://www.pcwelt.de/ratgeber/VPN_mit_dem_Raspberry_Pi_-_so_geht_s-Sicher_surfen-8640499.html">VPN server</a></li>
+</ul>
+<p>Kontakt zu anderen Medien</p>
+<ul>
+<li>Pi Twitter lib <a href="http://raspi.tv/2013/how-to-create-a-twitter-app-on-the-raspberry-pi-with-python-tweepy-part-1">1</a>, <a href="http://raspi.tv/2014/tweeting-with-python-tweepy-on-the-raspberry-pi-part-2-pi-twitter-app-series">2</a></li>
+<li>Raspi sendet email&nbsp;<a href="http://www.sbprojects.com/projects/raspberrypi/exim4.php">1</a>,&nbsp;<a href="http://www.raspberrypi-spy.co.uk/2012/05/send-text-and-html-email-using-python/">2</a>,&nbsp;<a href="http://elinux.org/RPi_Email_IP_On_Boot_Debian">3</a></li>
+<li><a href="http://chewett.co.uk/2013/02/irc-client-on-raspberry-pi-screen-and-irssi/">irssi</a>, (<a href="http://www.irssi.org/">program homepage</a>) chat client</li>
+<li>mumble&nbsp;<a href="http://www.forum-raspberrypi.de/Thread-tutorial-mumble-server">server</a> installieren</li>
+</ul>
+<p>Audio, Video</p>
+<ul>
+<li><a href="http://www.raspbmc.com/">raspbmc</a> media center, <a href="http://wiki.xbmc.org/index.php?title=Raspbmc">Wiki</a>, im xbmc <a href="http://forum.xbmc.org/forumdisplay.php?fid=166">forum</a></li>
+<li><a href="http://www.google.de/search?q=raspberry+mpd+install&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:de:official&amp;client=firefox-a#q=raspberry+mpd+install&amp;hl=de&amp;client=firefox-a&amp;hs=5WK&amp;tbo=d&amp;rls=org.mozilla:de:official&amp;ei=lAcYUdSePMiK4gTz4oD4AQ&amp;start=10&amp;sa=N&amp;bav=on.2,or.r_gc.r_pw.r_qf.&amp;bvm=bv.42080656,d.bGE&amp;fp=dee4f4c5a1cb3f59&amp;biw=1013&amp;bih=1001">raspberry mpd install</a> music player demon, scheints ganz gut (<a href="http://www.joocom.de/blog/raspberry-pi-und-mpd-als-jukebox/">2</a>, <a href="http://kaffeeringe.de/703/fernsteuerte-musik-per-mpd-und-android/">3</a>, <a href="http://www.cuddon.net/2012/08/auto-install-and-configure-mpd-on.html">4</a>, <a href="http://www.raspberrypi.org/phpBB3/viewtopic.php?f=9&amp;t=6056">5</a>, <a href="http://www.rn-wissen.de/index.php/Raspberry_PI:_Internetradio">RN-Wissen</a>, <a href="http://fschreiner.de/?p=387">7</a>, <a href="http://ubuntuforums.org/showthread.php?t=1211107">Song Notification Script</a>)</li>
+<li><a href="http://mpd.wikia.com/wiki/Clients">mpd</a>&nbsp;wiki</li>
+<li>Patchfork Web Frontend für den MPD (<a href="http://wiki.ubuntuusers.de/Patchfork">1</a>, <a href="http://git.joshuawise.com/patchfork.git/">2</a>)</li>
+<li>Raspberry Pi <a href="http://www.youtube.com/watch?v=KM4n2OtwGl0">Internet Radio Tutorial</a> (MPD + 20x4 LCD)(Youtube)</li>
+<li>Text2Speech <a href="http://blogs.uni-due.de/zim/2014/03/21/sprich-freund-und-tritt-ein-sprachausgabe-fur-den-raspberry-pi-mit-espeak-und-svox-pico/">1</a>, <a href="http://wiki.ubuntuusers.de/eSpeak">2</a></li>
+</ul>
+<p>Netzwerk</p>
+<ul>
+<li>remote FTP Server <a href="http://kaffeeringe.de/705/ftp-server-als-verzeichnis-einbinden/">als Laufwerk mounten</a></li>
+<li><a href="http://www.forum-raspberrypi.de/Thread-webcam-script?pid=11590#pid11590">ftp</a> per shell</li>
+<li><a href="http://wiki.ubuntuusers.de/Internetverbindungsfreigabe">Internetverbindungsfreigabe</a>, zb. UMTS im Laptop, via LAN Buchse den RAspi dran.</li>
+<li>RasPi asl <a href="http://www.howtogeek.com/139433/how-to-turn-a-raspberry-pi-into-a-low-power-network-storage-device/">Samba NAS</a>, <a href="http://www.forum-raspberrypi.de/Thread-tutorial-festplatte-fritz-nas-in-raspberry-pi-mounten">Fritzbox Festplatte</a> an Raspi hängen, <a href="http://www.jeremymorgan.com/tutorials/raspberry-pi/how-to-raspberry-pi-file-server/">noch eine Anleitung</a>, detailliert.</li>
+<li><a href="https://xsatria.wordpress.com/2013/07/09/usb-tethering-from-android-to-raspberry-pi/">Tethering</a>&nbsp;zu Android</li>
+<li><a href="https://learn.adafruit.com/fona-tethering-to-raspberry-pi-or-beaglebone-black">GSM Modem</a>&nbsp;für GPRS</li>
+<li><a href="https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md">Public Key login für SSH</a>&nbsp;- Rezept</li>
+</ul>
+<p>Misc</p>
+<ul>
+<li>Owncloud <a href="http://www.forum-raspberrypi.de/Thread-tutorial-owncloud-5-server-installieren-raspbian-wheezy-dropbox-alternative">tutorial</a></li>
+<li>Raspi zeigt, <a href="http://next.kolumbus.no/2012/06/22/raspberry-pi/">wann der Bus fährt</a></li>
+<li>Text to Speech <a href="http://elinux.org/RPi_Text_to_Speech_(Speech_Synthesis)">1</a>, <a href="http://www.cstr.ed.ac.uk/projects/festival/onlinedemo.html">2</a>, <a href="http://www.cstr.ed.ac.uk/projects/festival/">3</a>, <a href="http://whiskeytangohotel.com/raspi-tss">4</a></li>
+<li><a href="http://info-beamer.org/pi/">info-beamer</a>, infoterminal, wurde auch beim 29c3 benutzt</li>
+<li><a href="https://github.com/hackerspaceshop/RaspberryPI_WS2801_Bridge">WS2801 Bridge</a> vom metalab</li>
+<li><a href="http://saw4fun.com/wiki-e4vc/index.php?title=Main_Page">Distri speziell für Alte</a></li>
+</ul>
+<p>Betriebssystem</p>
+<ul>
+<li><a href="http://raspi.tv/2012/using-screen-with-raspberry-pi-to-avoid-leaving-ssh-sessions-open">screen</a>, (<a href="http://www.gnu.org/software/screen/">program homepage</a>), um Prozesse in den Hintergrund zu verlagern, zB. um ein Chatprogramm dauernd laufen zu lassen...</li>
+<li><a href="http://www.raspberrypi-spy.co.uk/2014/04/how-to-change-the-command-line-font-size/#more-3117">change</a>&nbsp;command line font size</li>
+<li><a href="http://k3a.me/how-to-make-raspberrypi-truly-read-only-reliable-and-trouble-free/">read only</a>&nbsp;filesystem (<a href="http://k3a.me/how-to-make-raspberrypi-truly-read-only-reliable-and-trouble-free/">2</a>)</li>
+<li><a href="http://fuzon.co.uk/phpbb/viewtopic.php?f=8&amp;t=5#p5">dietpi</a>&nbsp;abgespeckte konfigurierte images</li>
+<li><a href="http://www.321linux.com/2014/02/13/raspberry-pi-raspbian-image-unter-linux-auf-sd-karte-kopieren-anleitung/">sdcard unter linux</a>&nbsp;schreiben</li>
+</ul>
+<p>Hardware</p>
+<ul>
+<li><a href="http://krausens-online.de/debianraspbian-usb-automatisch-mounten/">USBMOUNT</a>&nbsp;Laufwerke automatisch mounten</li>
+<li><a href="http://www.das-labor.org/wiki/Labnode">Labnode</a> CAN Bus im "Labor"</li>
+<li>Infrarot senden und empfangen: <a href="http://randomtutor.blogspot.de/2013/01/web-based-ir-remote-on-raspberry-pi.html">1</a>, <a href="http://www.stavros.io/posts/how-turn-your-raspberry-pi-infrared-remote-control/">2</a>, <a href="http://alexba.in/blog/2013/01/06/setting-up-lirc-on-the-raspberrypi/">3</a></li>
+<li>20x4 LCD &amp; Python <a href="http://www.raspberrypi-spy.co.uk/2012/08/20x4-lcd-module-control-using-python/">1</a>, <a href="http://www.raspberrypi-spy.co.uk/2012/08/16x2-lcd-module-control-with-backlight-switch/">2</a></li>
+<li>DS18B20 Temp Sensor <a href="http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/temperature/#step-two">1</a>, <a href="http://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing/ds18b20">2</a>, <a href="http://www.raspberrypi-spy.co.uk/2013/03/raspberry-pi-1-wire-digital-thermometer-sensor/#more-1338">3</a>,&nbsp;<a href="https://www.kernel.org/doc/Documentation/w1/w1.generic">Treiberdoku</a>, erklärt löschen von Sensoren</li>
+<li><a href="http://tutorials-raspberrypi.de/gpio/luftfeuchtigkeit-und-temperatur-mit-dht11-dht22-mit-dem-raspberry-pi-messen/">DHT22 Feuchtesensor</a>&nbsp;Python</li>
+<li>Gutes <a href="http://www.visual-data.de/component/page,shop.product_details/flypage,shop.visual_data/product_id,499/category_id,224/manufacturer_id,0/option,com_virtuemart/Itemid,50/">Alugehäuse</a></li>
+<li><a href="http://www.element14.com/community/groups/raspberry-pi">element14</a> (hersteller)</li>
+<li><a href="http://harizanov.com/category/raspberry-pi/">http://harizanov.com/category/raspberry-pi/</a> Eine Menge Bastelideen zum PI</li>
+<li><a href="http://www.helbing.nu/projekte/raspberry-pi/raspbian-shutdown-key.html">Shutdown Taster</a> am GPIO Port, <a href="http://raspi.tv/tag/python-raspberry-pi-gpio-interrupts">Interrupts via Phyton</a>, das gleiche mit <a href="http://www.3cc.org/blog/2013/01/raspberry-pi-shutdown-switch-safely-turning-off-the-pi/">Polling</a></li>
+<li>Start / Shutdown mit&nbsp;<a href="http://www.mosaic-industries.com/embedded-systems/microcontroller-projects/raspberry-pi/on-off-power-controller">komplettem Power-Off</a></li>
+<li><a href="http://raspi.tv/2012/making-a-reset-switch-for-your-rev-2-raspberry-pi">Reset Switch</a> nachrüsten</li>
+<li>chiptemp messen: <code>vcgencmd measure_temp</code></li>
+<li><a href="http://www.cooking-hacks.com/index.php/documentation/tutorials/raspberry-pi-gprs-gsm-quadband-sim900">SIM900 GSM Modem am Raspberry</a>, <a href="http://www.cooking-hacks.com/index.php/documentation/tutorials/raspberry-pi-gprs-gsm-quadband-sim900">2</a></li>
+<li><a href="http://pikiosk.tumblr.com/post/39526392102/raspberry-3g-modem-usb">Huawei Modem am Pi</a></li>
+<li><a href="http://raspberrycenter.de/handbuch/sd-karten-raspberry-pi">SD Karten Auswahl</a> für den Pi</li>
+<li>RasPi als <a href="http://blog.stevemarple.co.uk/2012/07/avrarduino-isp-programmer-using.html">AVR Programmer</a></li>
+<li><a href="http://www.daveakerman.com/?page_id=1294">Versorgung nur über 3,3V</a></li>
+</ul>
+<p>&nbsp;Info</p>
+<ul>
+<li><a href="http://raspberrycenter.de/">RaspberryCenter.de</a></li>
+<li><a href="http://elinux.org/RPi_Hub">eLinux</a> RasPi Hub</li>
+<li>Offizielles <a href="http://www.raspberrypi.org/phpBB3/index.php">Forum</a></li>
+<li><a href="http://kampis-elektroecke.de/?page_id=1648">Kampis Elektroecke</a></li>
+<li>Rasp. <a href="http://www.raspberrypi-spy.co.uk/">Pi Spy</a></li>
+</ul>}}}

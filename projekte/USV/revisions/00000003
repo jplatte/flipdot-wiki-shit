@@ -1,0 +1,14 @@
+= Unterbrechungsfreie Stromverbindung =
+
+Einige Systeme im Space sind betriebskritisch und müssen einen Stromausfall nahtlos für mind. 24h überstehen:
+
+ * Server
+ * Telefon
+ * Alarmanlage (Sensoren und Aktoren)
+ * Türschloss
+
+Andere Systeme mögen es ebenfalls nicht, wenn sie "hart" ausgeschaltet werden, sie benötigen ein sanftes Herunterfahren:
+
+ * Beamer
+ * Raspberry Pis (z.b. Blinkenlights)
+ * 

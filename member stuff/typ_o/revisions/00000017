@@ -1,0 +1,102 @@
+-> [[typ_o/ideen|ideen]]
+
+= Packliste =
+ * Pelicase gross + Schloss
+ * Rad
+  * Ersatzschlauch
+  * Flickzeug
+  * Multirool
+  * Mantelheber
+  * Gabelschlüssel
+ * NB NT
+ * USB DISK
+ * Werkstatt
+  * Machen
+  * Messen
+  * Teile
+ * Funk
+  * tx
+  * ant
+  * rohr
+  * UHF kabel
+  * Netzteil
+  * Audiokabel
+  * SWR Meter
+ * wg. Badge
+  * USB Sticks
+  * SMA Connector, Koaxkabel mit SMA Stecker
+  * Headset
+  * Bose!
+  * [[https://rad1o.badge.events.ccc.de/case|Vorbereitetes Gehäuse]]
+  * Antennenkabel für SW
+  * Antennenrohr
+  * Klebeband
+ * Strom
+  * --(orange Gummischlauchleitung )--
+  * --(Kabeltrommel )--
+  * PC Lüfter + Netzteil
+ * Licht
+  * Leuchtstoffröhren
+  * HT Filter-Folie
+  * Goldfolie
+  * Foldback Clips
+  * Kabelbinder
+  * --(Taschenlampe )--
+  * --(Ersatzaccus )--
+  * --(Lader)--
+ * Essen
+  * Gewürze, Essig, Öl
+  * Kochmesser, Brett
+  * Trangia
+  * Tee + Teefilter
+
+ccc list
+
+ * toilet paper and babywipes
+ * a drinking bottle. Drink more water - drinking (water! not mate, not beer!) not enough is the most common DoS-Attack at camps.
+ * your own power cord (10m should be enough) and multiple plug sockets, as much as you need
+ * --(ethernet cable.)-- the next datenklo could be away up to 50 meters (160 ft)
+ * --(a tent)-- to sleep in. Please read our Camping-howto for more details.
+ * a sleeping bag and a mattress, and a sleeping pad - and a cosy cushion.
+ * a blanket to sit on and place your laptop on. You might want to sit on a morning-wet ground...
+ * penknife (peferebly one of those swiss-made multitool thingies)
+ * a cosy sun chair for hanging out
+ * chairs and tables
+ * default meal tools (like knife, fork, spoon, spork! plate, mug...)
+ * --(lamps)-- (it's getting dark when the EvilDaystar falls)
+ * --(a rescue blanket)--: These are those silvery blankets you find in first aid kits. They are very good at reflecting sunlight away from your computer monitor, so you'll be able to hack during the day. Most tents let a *lot* of light in and rescue blankets are one of the cheaper ways to fix that.
+ * many trash bags to collect your trash
+ * a fire extinguisher if you own one, or a bucket (to fill with water)
+ * Wet weather gear, or you could be trapped in your tent for a whole day.
+ * ashtray, if you're smoking
+ * Appropriate clothing: for warm and sunny, and for cold and rainy weather. It is better to have clothing you won't need than to need clothing you don't have. Although it is very warm during the day, it gets very cool in the evening. Pullovers are recommended.
+ * sun blocker. SPF 30 is recommended. If you haven't left your dungeon since the last camp use SPF-over-9000.
+ * a hat and sunglasses against the sun
+ * Insect Repellents
+ * ear plugs if you think you think you need them (you will. This is after all a big party.)
+ * a swimming-dress, not the Borat one :)
+ * Do *not* forget your towel! Be a hoopy frood who really knows where h{is,er} towel is.
+ * a toothbrush, toothpaste and soap.
+ * shampoo for your hair, shower gel for your body (and perhaps conditioner etc.)
+ * thongs (Badeschuhe) for the shower
+ * your allergy medication and NEEDED drugs. This is in the middle of nature.
+ * --(a rope...?)--
+ * your health insurance service card (Krankenversichertenkarte)/ European Health Insurance Card for residents of other EU states.
+ * If you arrive for buildup or stay for teardown, it could be a good idea to bring a game that does not require power and/or network, especially if you travel with children or hackers who get bored fast.
+ * Also, since you are already out there in the nature, you might bring stuff more suited for physical activities: balls, frisbees, javelin, light aircraft.
+ * and please take home ALL the stuff your brought!
+ * a micro-usb cable (you will find out why) (and not USB3.0, just the tiny little USB2.0 one)
+
+= SDR =
+software
+
+ * [[https://play.google.com/store/apps/details?id=com.mantz_it.rfanalyzer&hl=de|rfanalyzer]]
+ * [[https://github.com/mossmann/hackrf/wiki/Getting-Started-with-HackRF-and-GNU-Radio|pentoo]] linux, Linux distribution with full support for HackRF and GNU Radio
+
+Tutorials
+
+ * https://greatscottgadgets.com/sdr/1/  (nummer hochzählen)
+
+Info
+
+ * hackrf [[https://github.com/mossmann/hackrf/wiki/HackRF-One|wiki]]

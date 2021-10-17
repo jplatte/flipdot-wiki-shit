@@ -1,0 +1,44 @@
+Entwurf - möglichst kein Feature Creep!
+
+== Sensoren / Aktoren = Knoten ==
+ * Knoten laufen mit Batterieversorgung
+ * Knoten laufen mit Netz, wenn Spannung verfügbar, oder Knoten immer erreichbar sein muß (Für Aktoren wie Heizung)
+ * Hardware und Software für Batterie- und Netzbetrieb identisch, Auswahl durch Jumper
+ * Batterielebensdauer ~ 1 a
+ * Experiment mit Nachladung der Batterien via PV?
+ * Knoten erfassen
+  * Ihren Batteriestatus
+  * Die Wlan Feldstärke
+  * Mechanische Zustände
+  * Temperaturen (optional)
+  * Wasser (optional)
+  * Stromverbrauch / Aktivität von 230 V Verbrauchern (optional)
+ * Knoten schlafen immer, wachen auf durch
+  * mechanischen Vorgang (Tür wird geöffnet)
+  * Schwellwertüberschreitung (Helligkeit < Schwellwert) (optional, Anwendungsfall noch offen, Detektion offener Fenster?)
+ * Knoten übertragen entweder
+  * nur eine Transition (Lichtschranke durchschritten, Klingeltaste gedrückt) => einfacher Aufbau, ESP im DeepSleep, oder
+  * Transition und neuen Status (Tür wurde bewegt, ist jetzt offen) => Attiny nötig um ''Wechsel'' zu erkennen, ''oder'' Lösung mit zwei Schaltern
+ * Knoten sind billig
+
+== Infrastruktur / Vernetzung ==
+ * Denkbar: Ein separates Wlan nur für IoT ohne Kontakt zum Internet
+ * lokale Zentrale im Space ist in diesem separaten Netz
+
+== Zentrale / API ==
+ * Es gibt eine lokale Zentrale im Space, die die Knotendaten einsammelt
+ * Es gibt die Space API "draussen", die von der lokalen Zentrale zyklisch alle Stati gemeldet bekommt
+ * Befehle an die Knoten: TBD (Schnittstelle IRC-> lokale Zentrale?)
+ * Die Sensorbenamung folgt einem Regelwerk: mögliche Messwerte, Raumbezeichner..
+
+== Verarbeitung ==
+ * Die lokale Zentrale im Space verknüpft die Daten einzelner Knoten  (Heizung = an & Fenster = auf),  (Kühlschrank > 5 min geöffnet)
+ * und leitet daraus ggf. Aktionen ab (Anzeige an zentralem Termina im Space, Mail an Paten
+
+== Aktoren / Melder ==
+ * Die Daten der Space Knoten finden Aufnahme in den !Status im IRC
+ * Knotenpaten bekommen Mail wenn Batterie alle
+ * Anzeige an der Ausgangstür: Ein Blick - alle Knoten auf grün,  Space kann geschlossen werden, und / oder akustische Benachrichtigung  wenn noch ein Knoten auf rot steht
+ * Aktionen triggern (Anzeigen am Space-Ausgang: "Dachluken offen", Klopapier alle", "Herd noch an")
+ * Triggern von Einträgen in Einkaufslisten (Klopapier) oder Bestellungen (Bier? ;)
+ * Reaktionen auf besondere Zustände (Einbruch o.ä.) Mail, SMS ...

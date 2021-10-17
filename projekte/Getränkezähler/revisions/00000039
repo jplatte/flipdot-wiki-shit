@@ -1,0 +1,215 @@
+== Idee ==
+
+Es soll mithilfe eines Barcode Scanners gezählt werden, wie viele Getränke man getrunken hat. So behält jeder den Überblick, wieviel er dem Verein spenden sollte und wir wissen, wann neue Getränke besorgt werden müssen.
+
+== Team ==
+
+ * Wer ist dabei, wer übernimmt welche Rolle?
+  * DoB - Koordination
+  * Niklas - Datenbank/Modellierung, Externe Schnittstellen (später)
+  * Sören  - Ansteuerung Display ( http://www.raspberrypi-spy.co.uk/wp-content/uploads/2012/07/16x2_lcd_module.jpg )
+  * Eike   - Elektronik
+   * http://www.raspberrypi-spy.co.uk/2012/07/16x2-lcd-module-control-using-python
+  * Anselm - Core-Logik
+  * Jonas  - Core-Logik
+  * kssoz  - Testing, Installation
+
+== Features ==
+=== Bezahlsystem ===
+Spenden per Prepaid-Karte soll ermöglicht werden, nicht erzwungen. Das analoge Spendensystem (von *hel) wird nicht abgeschafft, sondern ergänzt.
+
+=== Flasche abbuchen ===
+Wenn eine Flasche gescannt wird, soll eine Spende von seinem Konto abgebucht werden. Gäste ohne ID haben ein gemeinsames anonymes Konto.
+
+==== Entnahme mit ID ====
+===== UserID -> Flasche =====
+{{{
+UserID Scan (A) 
+Warten (in time)
+Flaschen Scan (a)
+Einloggen (A)
+Abbuchen (A; a)  //Flasche der Sorte a wird im User-Konto A verbucht
+Ausloggen (A)
+}}}
+
+===== Flasche -> UserID =====
+{{{
+Flaschen Scan (a)
+Warten (in time)
+UserID Scan (A) 
+Einloggen (A)
+Abbuchen (A; a) //Flasche der Sorte a wird im User-Konto A verbucht
+Ausloggen (A)
+}}}
+
+==== Entnahme ohne ID ====
+===== Flasche -> Timeout =====
+{{{
+Flaschen Scan (a)
+Warten (timeout)
+Einloggen (Gast)
+Abbuchen (Gast; a) //Flasche der Sorte a wird anonym im User-Konto Gast verbucht
+Ausloggen (Gast)
+}}}
+
+===== Flasche -> Flasche =====
+{{{
+Flaschen Scan (a)
+Warten (in time)
+Flaschen Scan (b)
+Einloggen (Gast)
+Abbuchen (Gast; a, b) // 2 Flaschen der Sorte a/b werden anonym im User-Konto Gast verbucht
+Ausloggen (Gast)
+}}}
+
+==== Fehlerhafte Entnahme ====
+===== UserID -> Timeout =====
+{{{
+UserID Scan (A) 
+Einloggen (A)
+Warten (timeout)
+Abbuchen (A; Error) //Unvollständige User Session wird geloggt
+Ausloggen (A) //Unvollständige User Session wird abgebrochen
+}}}
+
+===== UserID -> UserID =====
+{{{
+UserID Scan (A)
+Einloggen (A)
+Warten (in time)
+UserID Scan (B)
+Abbuchen (A; Error) //Unvollständige User Session wird geloggt
+Ausloggen (A) //Unvollständige User Session wird abgebrochen
+Einloggen (B)
+Warten () [...] //Je nach folgendem Scan/Timeout unterschiedlicher Weitergang
+}}}
+
+=== Einbuchung neuer Kisten ===
+Nach dem Einkauf müssen neue Kisten in den Bestand eingebucht werden. Dazu gibt es "Kisten-Karten" mit Barcodes für verschiedene Kistengrößen. Nachdem die Flaschenanzahl der Kiste (1, 6, 12, 16, 20) damit eingegeben wurde, muss noch eine Flasche aus dieser Kiste gescannt werden, um die Sorte zu erfassen.
+
+===== Kisten-Karte -> Flasche =====
+{{{
+Kisten-Karten Scan (Anzahl)
+Warten (in time)
+Flaschen Scan (a)
+Einloggen (Gast)
+Einbuchen (Gast; a, Anzahl) //Neue Kisten werden anonym eingebucht
+Ausloggen (Gast)
+}}}
+
+==== Fehlerhafte Einbuchung neuer Kisten ====
+===== Kisten-Karte  -> Timeout =====
+{{{
+Kisten-Karten Scan (Anzahl)
+Warten (timeout)
+Einloggen (Gast)
+Einbuchen (Gast; Error, Anzahl) //Kisten-Karten ohne Sorte nicht einbuchbar
+Ausloggen (Gast)
+}}}
+
+===== Kisten-Karte  -> UserID =====
+Kisten-Karten Scan (Anzahl)
+Warten (in time)
+UserID Scan (A)
+Einloggen (A)
+Einbuchen (A; Error, Anzahl)  //Kisten-Karten ohne Sorte nicht einbuchbar
+Ausloggen (A)
+
+===== Flasche -> Kisten-Karte =====
+{{{
+Flaschen Scan (a)
+Warten (in time)
+Kisten-Karten Scan (Anzahl)
+Einloggen (Gast)
+Einbuchen (Gast; Error, Anzahl)  //Nur Kisten-Karten können Einbuchung initiieren!
+Ausloggen (Gast)
+}}}
+
+===== UserID -> Kisten-Karte =====
+{{{
+UserID Scan (A)
+Warten (in time)
+Kisten-Karten Scan (Anzahl)
+Einloggen (A)
+Einbuchen (A; Error, Anzahl) //Nur Kisten-Karten können Einbuchung initiieren!
+Ausloggen (A)
+}}}
+
+
+
+=== Neue Feature Ideen ===
+  * Scanpiep ersetzen durch Schraubverschluss Geräusch (Zischhhh)
+  * NFC Bezahl Methode
+  * Nach Scan wird ein selbstklebendes Etikett ausgedruckt zum Flasche markieren (User ID, Datum, Glückskeksspruch ...)
+  * Auf Flipdot Display werden gescannte Getränke gezählt (beta: nur 3 stellig, später mehr Infos wie Getränketyp)
+  * Datenbank schlägt Alarm, wenn kritische Lagerbestände unterschritten werden (-> Getränke-Einkauf)
+  * Statistiken über Getränke :D
+  * Zusätzlich gibt es einen Hardware Knopf mit dem ich alle Aktionen abbrechen kann und wieder zurück in den Initialzustand wechseln kann
+  * Datenbank läuft mit auf dem PI, Daten bleiben im Space
+
+== Zeitplan ==
+
+    1. Termin: 02.07.2015 18:00 Uhr
+        Technologie entscheiden
+        Setup Raspberry PI
+        Ausgabe Barcode auf Anzeige (HDMI-Bildschirm)
+    2. Termin: 09.07.2015 18:00 Uhr
+        Barcode-Format spezifizieren
+        Hintergrundbeleuchtung, Kontrast einstellen
+    3. Termin: 16.07.2015 18:00 Uhr
+        SQL Datenbank modellieren
+    4. Termin: 27.04.2016
+        Case fertigbauen und im Space installieren
+        RasPi bestellen
+    5. Termin: 28.04.2016
+        Raspi anschliessen und einrichten
+        Barcodes in Datenbank speichern und zählen
+    6. Termin 29.04.2016
+        Flipdot Display ansteuern
+        low-res font implementieren
+        Testing (Hacked) ^^
+
+== Details ==
+
+=== Spezifikation für den Barcode ===
+{{{
+23Z YYYY YYYXX C
+
+enum Z
+{
+	Steuerkarte = 0,
+	Guthabenkarte = 1
+}
+
+X - Steuerkarte:
+		Anzahl an Elementen/Flaschen
+	Guthabenkarte:
+		Ursprünglicher Betrag
+
+Y - Steuerkarte:
+		0
+	Guthabenkarte:
+		Random
+
+C - EAN-Checksum
+}}}
+Der Barcode startet mit 23, um mit dem EAN-13-Standard kompatibel zu sein (20-29 für In-Store-Functions). Vgl: http://www.barcodeisland.com/ean13.phtml
+
+=== Datenbank ===
+
+{{http://i.imgur.com/QJvq4nW.png}}
+
+
+=== Hack ===
+
+Getränkezähler mit Flipdotdisplay verbunden und schöne Invaders lowres-font implementiert.
+
+"Wir kommen doch nicht über 999 Getränke pro Tag oder?" 
+-> Getränkezähler geDoSt: Makita, Deutschlandflagge, Krepklebeband, Bier-Etikett, Mate-Ettiket ^^
+
+{{attachment:IMG_20160429_190628.jpg}}
+{{attachment:IMG_20160429_190844.jpg}}
+{{attachment:VID_20160429_190711.mp4}}
+{{attachment:VID_20160429_190901.mp4}}
+[[attachment:VID_20160429_190711.mp4]]
+[[attachment:VID_20160429_190901.mp4]]

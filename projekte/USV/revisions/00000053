@@ -1,0 +1,67 @@
+= Unterbrechungsfreie Stromversorgung =
+<<TableOfContents()>>
+
+== "DIE USV"℠ ==
+Ein große [[https://de.wikipedia.org/wiki/Unterbrechungsfreie_Stromversorgung|USV]] (aka. "DIE USV"℠) soll dazu dienen, den [[Server]] mit Notstrom zu versorgen, damit dieser --(sanft herunterfahren kann)-- im Notbetrieb mind. 12h weiterläuft und Services unterbrechungsfrei zur Verfügung stellt (z.B. [[Neuland/Internet|Internet]] in der Nachrichtenmeisterei).
+
+Folgende Systeme müssen möglichst lang am Leben gehalten werden:
+
+ * Türschloss (inkl. GSM Modul)
+ * Telefon (Anrufbeantworter)
+ * Alarmanlage (Sensoren und Aktoren)!
+ * Internet, Core-Netzwerk, Server
+ * Notbeleuchtung (über 12V-LED-Strips? Oder einfach ein paar 12V-MR16 Leuchten nehmen? Oder rote GU10-240V-Leuchten?)
+
+=== APC ===
+[[typ_o]] hat noch eine alte USV bei sich zu Hause, die er dafür spenden wollte. Es handelt sich wohl um eine SmartUPS1000 von APC.
+
+{{https://img.conrad.de/medias/global/ce/9000_9999/9700/9730/9738/973893_LB_00_FB.EPS_1000.jpg|SmartUPS1000 von APC|height="200px"}}
+
+ * TODO: USV vor Bestellung von den Akkus nochmal testen!
+
+=== Akku-Kapazität ===
+Erste Vermutung: 100 Ah Kapazität benötigt für 12 h 100 W Betrieb.
+
+{{{
+Akku -> USV (η = 80%) -> Last
+
+12 h * 100 W Last = 1,2 kWh
+
+Eingangsenergiemenge der USV: 1,2 kWh * 0,8 = 1,5 kWh
+
+Akku muss also 10h lang 15A abgeben können. = 150 Ah
+}}}
+
+Die Kapazitätsangaben für Akkus beziehen sich auf die tiefstzulässige Entladung, die die Lebenszeit drastisch verkürzt. Faustregel: nur 70% entnehmen für halbwegs gute Lebensdauer. Nötige Ah-Leistung also
+
+{{{
+150 Ah * 0,7 = 214 Ah
+}}}
+
+Die Angabe zB. 100 Ah auf einem Akku bezieht sich üblicherweise auf 20 h Entladung , das nennt man dann auch den C20 - Wert. Bei nur 10 stündiger Entladung kann dem Akku weniger Energie entnommen werden, seine Kapazität muss also größer sein. Erfahrungswert + 15%. Nötige Akkukapazität also
+
+{{{
+214 Ah * 1,15 = 246 Ah
+}}}
+-> ca. '''250 Ah''' benötigt.
+
+=== Ein Akku ist besser ===
+Nur wenn es unerlässlich ist, sollte eine Parallelschaltung oder eine Serienschaltung vorgenommen werden, wobei unbedingt auf gleiche Kapazität, gleiche Bauart, gleichen Ladezustand, gleiches Alter und am besten noch das die Batterien von der gleichen Charge sind, geachtet werden muss. Es ist immer von Vorteil, eine große Batterie (z.B 1x 200Ah als 2x 100Ah) anstelle von zwei kleinen Batterien einzubauen, da evtl. beim Ersatz eine gealterte Batterie mit einer neuwertigen Batterie verschaltet werden könnte! Ferner kann es vorkommen, dass nach einer Weile eine von den zusammengeschalteten Batterien schwächelt und die noch „Guten“ Batterien herunterziehen!
+
+{{http://www.solartec-shop.com/bilder/produkte/gross/Solarbatterie-Akku-Banner-Bull-Bloc-Flies-230Ah.jpg|Symbolbild eines LKW Akkus mit 250Ah|height="200px"}}
+
+== die usvs ==
+Andere Systeme mögen es ebenfalls nicht, wenn sie "hart" ausgeschaltet werden, sie benötigen ein sanftes Herunterfahren:
+
+ * Beamer
+  * ''[Kommentar von Wolfi: Der kommt mir aber nicht mit an "DIE USV"℠...]''
+ * Raspberry Pis (z.b. Blinkenlights)
+  * ''[Kommentar von Wolfi: Es können gerne alle Raspis die in der Nähe --(vom Netzwerkschrank)-- der USV montiert sind mit über "DIE USV"℠ versorgt werden. Wenn habe ich sowieso vor da noch 'n Ein-Netzteil-Für-Alles aka modifiziertes ATX-Netzteil für die Versorgung von allen 12V/5V/3.3V Dingen zu basteln, welches dann auch mit an der USV hängen wird. Das aber erst, wenn das mit der Elektroinstallation fertig ist.]''
+  * ''kssoz: Für das Herunterfahren der Pis wurde von typ_o über dezentrale USV geredet. Ich halte das für sinnvoll, weil einige Pi Projekte kommen und gehen, ohne zentralistische Planung.''
+
+''siehe auch andere [[Projekte]]''
+
+== Hacker ==
+ * typ_o
+ * malled
+ * Wolfi

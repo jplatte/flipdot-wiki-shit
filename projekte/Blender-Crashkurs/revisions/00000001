@@ -1,0 +1,27 @@
+Hier ein minimales Tutorial, was dir erklärt, wie man sich innerhalb von Blender 2.6+ bewegt.
+
+== Ansicht ändern ==
+ * __{{{Mittlere Maustaste (MMB)}}}__ gedrückt halten, um die Kamera um das zentrierte Objekt zu drehen
+ * __{{{Shift + MMB}}}__ gedrückt halten für Panning (seitliches Verschieben)
+ * __{{{Entf (Ziffernblock)}}}__ drücken, um die Kamera auf das ausgewählte Objekt zu zentrieren
+   * Vorher __{{{Rechte Maustaste (RMB)}}}__ klicken, um ein Objekt anzuwählen
+ * Tasten auf dem Ziffernblock drücken, um die Ansicht zu ändern:
+   * __{{{1}}}__ Frontalansicht
+   * __{{{3}}}__ Rechtsaufsicht
+   * __{{{7}}}__ Vogelperspektive
+   * __{{{8}}}__ Hoch
+   * __{{{2}}}__ Runter
+   * __{{{4}}}__ Links
+   * __{{{6}}}__ Rechts
+   * __{{{5}}}__ Wechseln zwischen Perspektive (an/aus)
+
+== Objekte ändern ==
+ * __{{{Rechte Maustaste (RMB)}}}__ klicken, um ein Objekt anzuwählen
+ * __{{{G}}}__ drücken, um in den ''Bewegungsmodus'' zu kommen.
+   * In diesem Modus __{{{X}}}__, __{{{Y}}}__ oder __{{{Z}}}__ drücken, um auf einer der Achsen einzurasten
+   * __{{{Shift + X}}}__, __{{{Shift + Y}}}__ und __{{{Shift + Z}}}__ ausprobieren
+   * __{{{Shift}}}__ gedrückt halten, während man die Maus bewegt, sorgt für genauere Bewegungen
+   * __{{{Strg}}}__ gedrückt halten, während man die Maus bewegt, sorgt fürs Bewegen im Raster
+     * __{{{Shift + Strg}}}__ für ein genaueres Raster
+ * __{{{R}}}__ drücken, um in den ''Rotationsmodus'' zu gelangen
+ * __{{{S}}}__ drücken, um in den ''Skalierungsmodus'' zu gelangen

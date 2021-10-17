@@ -1,0 +1,15 @@
+= IOT-NETZ =
+ * Subnetz: 192.168.42.0/24
+ * Gateway: 192.168.42.254
+ * DHCP-Range: .100 - 250
+ * SSID: security-by-iod
+ * Key: <siehe Forum>
+
+== Statische IP-Adressen ==
+muss < .100
+||IP ||Geraet ||Ort||Bemerkung||Verantwortlicher ||
+||192.168.42.42 ||Test-Geraet || || ||Frank ||
+||192.168.42.10||sensor/door/test||Lounge neben Tür|| ||typ_o||
+||192.168.42.11||sensor/button/test||Lounge neben Tür|| ||typ_o||
+
+

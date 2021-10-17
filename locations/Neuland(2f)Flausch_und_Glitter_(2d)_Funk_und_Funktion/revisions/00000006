@@ -1,0 +1,24 @@
+Ideensammlung zur Gestaltung und Ausrüstung unserer neuen Räume
+
+= Flausch und Glitter =
+ * An den Doppel-T-Trägern verschiebbare Klammern anbringen, an denen [[http://ecx.images-amazon.com/images/I/413Qqk1qIvL.jpg|Air-Chairs]] und Hollywoodschaukeln aufgehängt werden können
+ * Große Schultafel an einer Wand? Resp. Whiteboard(s)
+ * Leuchtschild, das man vor der Tür aufstellen kann, wenn der Space besetzt ist, um Neulingen den Weg zu weisen.
+ * Mobile Lampen (Strahler), die über IP geschaltet und gedimmt werden können
+ * 5 V - Stahlseil System vgl. Halogenbeleuchtung für anclipsbare Blinkenlights
+ * Lichtkuppeln von Außen nach innen beleuchten für Tagessimulation
+ * Automaten für µController, USB Kabel, Schoko
+
+= Funk und Funktion =
+ * Dicht unter der Decke Gitter abhängen (mittig oder besser an den Wänden), um dort Kabel einzulegen: Strom und Netz überall im Raum
+  * [[http://www.ebay.de/itm/170753384896|sowas?]]
+ * CAN Bus in jedem Raum ringsum unter der Decke entlanggeführt
+ * Flipdot Planet: Portal hinter Authentifizierung, das macht / anzeigt:
+  * Strom (Leistung, Arbeit)
+  * Temperatur, Heizung soll / ist
+  * Raumbelegung (1, 2, 3, Fräse in Betrieb)
+  * Raumplanung (Werkstatt-Benutzungs-Planungs-Kalender)
+  * Kalender für andere Termine
+  * Nächste Abfahrtzeiten Öpnv
+ * Wesentlich mehr Lagerraum in Regalen (Vorschlag: Ikea Ivar), darin identische Pappschachteln zum sortieren
+ * Ein fester Pate für eine Sache: Türserver / Schließsystem, Werkstatt, Küche mit dem Ziel, den Bereich sauber und funktionsfähig zu halten.

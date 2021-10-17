@@ -1,0 +1,25 @@
+Der klobot ist ein Teil der [[Neuland/Cyber/|Hackerspace Kybernetik]].
+
+== Aktueller Stand ==
+ * Industrielüfter bläst Gerüche aus dem Dach hinaus
+ * Zeitschaltuhr (vorübergehende Steuerung)
+ * Bewegungsmelder (montiert, unverkabelt) soll "Besetzt"-Status erkennen
+ * Monitor (montiert, unverkabelt)
+ * Kabel für Türsensor (unangeschlossen)
+
+== Final Form ==
+ * Bewegungsmelder schaltet Lüfter und Monitor ein.
+ * Monitor für ein Toiletten-Spiel mit Klo-Highscore
+ * Joystick neben dem Klo zum Spielen des Klo-Spiels
+ * Türsensor an Klotür misst, ob abgeschlossen ist
+ * Leuchtschild zeigt "Besetzt"-Status im großen Raum
+ * Papierspender/-zähler meldet den Nachfüllbedarf und entsorgt leere Klorollen durch Schwerkraft
+ * Cooles Schwarzlicht für Cybertoilette
+ * Messung der Sitzungszeit. Wenn > 30 sec., nach dem Spülen Notification: "Bitte Toilette reinigen", um die Klobürste und um den WC - Reiniger herum blinken LED, bis beide aus ihren Sensorhalterungen entnommen und benutzt worden sind.
+
+== Fehlende Komponenten ==
+ * Papierspender/-zähler (funktionierendes Design und Zählelektronik)
+ * Joystick auf Plattform
+ * RasPi/Arduino für klobot
+ * Stromversorgung (Wanddurchbohrung)
+ * [[http://www.amazon.com/Composite-S-Video-Converter-Screen-Version/dp/B003NUN7DG|RCA2VGA]] (13$ ~11,40€) oder [[http://www.aliexpress.com/item/Free-shipping-wholesale-2PCS-lot-Active-HDMI-to-VGA-female-AV-converter-with-audio-power-supply/842414062.html?s=p|HDMI2VGA]] (8,41$ ~7,37€) Adapter oder [[https://www.raspberrypi.org/blog/gert-vga-adapter/|Gerts VGA Platine]] ([[https://www.pi-supply.com/product/gert-vga-666-hardware-vga-raspberry-pi/|8,20€]]) für Raspberry Pi Model B+

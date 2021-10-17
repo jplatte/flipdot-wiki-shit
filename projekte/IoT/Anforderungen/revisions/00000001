@@ -1,0 +1,12 @@
+Entwurf
+
+ * Sensoren mit Batteriebetrieb
+ * Batterielebensdauer ~ 1 a
+ * Sensoren billig
+ * kein Feature Creep
+ * Status von Türen, Fenstern, Geräten (Herde, Fräse, Beamer..) erfassen
+ * Status zu einer Zentrale im Space übertragen
+ * Staus zur Space API übertragen
+ * Aktionen triggern (Anzeigen am Space-Ausgang: "Dachluken offen", Klopapier alle", "Herd noch an")
+ * Reaktionen auf besondere Zustände (Einbruch o.ä.) Mail, SMS ...
+ * Reaktion auf niedrigen Batteriestand in den Sensoren (Mail..)

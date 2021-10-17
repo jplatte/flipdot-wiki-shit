@@ -1,0 +1,45 @@
+== flipbot ==
+
+Unser IRC-Bot. Seit einer Weile auch ans IoD-Netz angeschlossen. Lauscht auf `actors/all/flipbot` und leitet alle Nachrichten von dort in unseren IRC-Channel weiter.
+
+ * Repo: https://github.com/flipdot/sopel-modules
+ * Verwendete Technik: Python (FIXME: Version?)
+
+
+== iod-api-bridge ==
+
+Sammelt Daten im MQTT-Netz und schickt sie zu https://api.flipdot.org/.
+
+ * Repo: https://github.com/flipdot/iod-api-bridge
+ * Verwendete Technik: Python 3
+
+
+== iod-error-spam ==
+
+Empfängt Fehlermeldungen anderer MQTT-Teilnehmer und spammt damit den IRC zu (via sopel). Jetzt auch mit Rate Limiting! Zusätzlich bald auch persistente, einfacher zu durchsuchende Logs.
+
+ * Repo: https://github.com/flipdot/iod-error-spam
+ * Verwendete Technik: Rust
+
+== iod-nodes ==
+
+Attiny-Software
+
+ * Repo: https://github.com/flipdot/iod-nodes
+ * Verwendete Technik: C++, Arduino
+
+
+== drinks-storage-mqtt ==
+
+Wertet Messungen von Getränkewaagen aus.
+
+ * Repo: https://github.com/flipdot/drinks-storage-mqtt
+ * Verwendete Technik: Python 3
+
+
+== drinks-storage-state ==
+
+Führt Waagen-Messungen durch und schickt die Ergebnisse ins Netz.
+
+ * Repo: https://github.com/flipdot/drinks-storage-state
+ * Verwendete Technik: C++, platform.io

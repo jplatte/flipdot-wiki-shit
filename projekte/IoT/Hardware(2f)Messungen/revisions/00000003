@@ -1,0 +1,10 @@
+== Messungen, Hardwarestand 0.4 ==
+330 µF Elko an der Batterie und 100 nF Kunsstoffolienkondensator direkt am ESP.
+
+=== Betriebsspannung nach der Schottky-Diode (Leitung BATT_LOW) DC Coupling ===
+[[attachment:Supply_DC_coupling.bmp|{{attachment:Supply_DC_coupling.bmp|attachment:Supply_DC_coupling.bmp|width="600"}}]]  Bei abgeschaltetem ESP und Attiny im Sleep Mode ist die Stromaufnahme so gering, dass an der Diode keine nennenswerte Spannung abfällt. Mit aktiviertem Attiny und ESP sinkt die Spannung nach der Diode um ~ 0,3 V, die Schwellspannung der Diode.
+
+=== Betriebsspannung nach der Schottky-Diode (Leitung BATT_LOW) AC Coupling ===
+[[attachment:Supply_AC_coupling.bmp|{{attachment:Supply_AC_coupling.bmp|attachment:Supply_AC_coupling.bmp|width="600"}}]]  Die Betriebsspannung bricht beim Verbindungsaufbau zyklisch um ca 50 mV ein, in der Übertragungsphase um ca 100 mV.
+
+Mit 10 µF Kerko an der Batterie und 100 nF Kunsstoffolienkondensator direkt am ESP: Die Betriebsspannung bricht max. um ca 200 mV ein. 

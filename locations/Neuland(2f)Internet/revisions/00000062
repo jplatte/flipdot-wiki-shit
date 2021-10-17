@@ -1,0 +1,121 @@
+<<TableOfContents()>>
+
+== DSL ==
+In den Gebäuden der Nachrichtenmeisterei sind angeblich 3x 16Mbit/s DSL Kupferkabel angeschlossen bei Vodafone. Das Kabel führt neben unserem gelben Eingang ins Haus und endet am orangen Eingang im Verteiler.
+
+Wir teilen uns eine dieser schmalen asymmetrischen Leitungen u.a. mit einem Filmemacher und einer Firma mit Cloud, die ebenfalls GBit Upload benötigen. 
+
+== VDSL ==
+In der Nachrichtenmeisterei gibt es bisher kein VDSL, [[petition|das wollen wir ändern!]]
+
+ Anschrift: 
+ Franz-Ulrich-Strasse 18, 
+ 34117 Kassel
+
+=== Vergangenheit ===
+Es geht das Gerücht, es gab mal ein Kabel, dass durch einen Geheimtunnel direkt gegenüber zum Hochbunker der Vodafone in einen Switch führte. Diese Verbindung ist legendär und aktuell nicht vorhanden. Es soll auch bereits Verhandlungen mit der Bahn und einem Anbieter bzgl. Glasfaseranschluss gegeben haben, jedoch soll eine gewisse Landesgrenze hier eine komplizierende Rolle spielen. (Nachrichtenmeisterei auf Bundesgebiet?)
+ 
+=== Fragen ===
+ * Wer hat sich bisher von der Nachrichtenmeisterei um Glasfaser gekümmert?
+ * --(Kann Wolle bitte den Kabelsalat unten im Flur beschriften?)-- -> Exceltabelle
+ * Wie kommen wir an eine Telefonnummer? -> Wolle
+ * Wo ist der Hausanschluss für Internet/Telefon?
+ * Ist die DB Kommunikationstechnik für Glasfaser am Hbf zuständig?
+
+== Recherchen ==
+Anrufe bei Vodafone (Kabel Deutschland), Unitymedia und Telekom im Geschäftskundenbereich brachten bisher keinen Erfolg. Die Nachrichtenmeisterei hat einen Vertrag mit der Telefonnummer 05619206270.
+
+Die Telefonanschlüsse der Bahn sind intern in der [[https://de.wikipedia.org/wiki/Bahnselbstanschlussanlage|BASA]] organisiert. Dieses firmeneigene, nicht-öffentliche Netz wurde bei Übernahme von Mannesmann Arcor an die Vodafone verkauft und von der DB zunächst gemietet, dann zurückgekauft. Wahrscheinlich ist die Zuständigkeit mittlerweile über die DB Systel GmbH zur [[https://www.dbkommunikationstechnik.de/dbkt-de/start/ansprechpartner/vertrieb.html|DB Kommunikationstechnik GmbH]] gewandert.
+
+=== DB Kommunikationstechnik ===
+ * Herr Postler (Vertrieb Nord): "Grundsätzlich benötigen wir für derartige Dinge zunächst einen Antrag auf Nutzung der Kupferdoppelader (Cu2Dr - DB-intern Endkundenanschlussleitung oder auch EkuAl genannt) direkt durch den versorgenden Carrier."
+ * Frau Konopacsek (Sales Regionalbereich West): "Sie müssen sich mit Ihrem Anliegen bitte an die Telekom oder Vodafone wenden. Mit diesen beiden Unternehmen haben wir Rahmenverträge und diese können uns dann mit ihrem Anliegen beauftragen. Eine direkte Beauftragung ist leider nicht möglich."
+ * Franz-Ulrich Str. 20 sitzt die Regionalverwaltung West der DB Kommunikations GmbH mit Serverraum und "USP 614" Hauptverteiler im Alucontainer davor. (Herr Reiss?)
+ * Hinter unserem Haus liegen an den Schienen wahrscheinlich Glasfaser. (bis in die Nachrichtenmeisterei?)
+ * Herr Reiss (Regionalleiter West): 
+  * "Der Auftrag läuft seit Wochen, wir haben keine Antwort oder namentlich bekannten Ansprechpartner der Telekom"
+  * Einen Anschluss über Bahninterne Leitungen müsste man mit der DB Systel GmbH absprechen
+ * Herr Schlicke (Vertrieb Regionalbereich West I.CVK 4-W) [Supertyp!]:
+  * flipdot e.V. muss mit Vodafone Endkundenvertrag + Anschluss für die DB klären, DB legt uns Glas/Coax vom Bunker rüber und schafft Anschlusspunkt!
+  * Es muss ein eigenes Kabel geben "Landesgrenzenproblem" ist kein Ding.
+  * Wir dürfen eigentlich nicht auf das Kabel der Systel (Bahninfrastruktur)... vielleicht doch.
+  * Schlicke meldet sich, wenn er mit Vodafone/Telekom geredet hat.
+
+=== DB Immobilien ===
+ * Herr Niemrodt 0561786xxxx:
+  * Kann uns den Schlüsselbesitzer des Hochbunkers nennen
+
+=== DB Systel GmbH ===
+ * TK Service Desk der DB: 06926550000
+  * bot: "Kein Platz frei. Bitte nochmal melden, schreib an sc-hannover@deutschebahn.com"
+
+=== Unitymedia ===
+ * Kein VDSL für unsere Adresse möglich
+ * Besitzt Kabel in Hessen
+
+=== Vodafone ===
+ * Haben angeblich nur 16er DSL für unsere Adresse
+ * Kein VDSL für Hessen möglich
+ * Businesshotline: 08001721234
+  * Kein Ansprechpartner im Hochbunker gegenüber genannt (Kölnische Str. 58A)
+  * emails an businessteam[at]vodafone.com -> keine Antwort
+  * Ansprechpartner für die Bahn: ?!! -> email ist intern raus soll 3cpo in 48h antworten
+ * Bauherrenservice: 08006648399
+ * Vodafone Kabel Deutschland GmbH: 08002787000
+  * besetzt - legt auf.
+ * Technische Hotline Vodafone: 08005266625
+ * --(Technische Support Hotline)-- Microsoft: 08005035215
+  * ♫ ... "Microsoft" WTF!
+ * Vodafone in Ratingen/Düsseldorf direkt: nope
+ * Region Nord Ferdinand Braun Platz 140549 Düsseldorf
+ * Verwaltung-Zentrale: 02115330 
+  * "weiss nix zu business oder Abteilungen" ?!
+ * Herr Cchen - Mobilfunk Business Experte - 017256xxxxx:
+  * grobes Angebot 100MBit/s symetrisch für ca. 1000€/Monat
+  * Begehung mit Techniker möglich, meldet sich bei uns bis 26.6.16
+   * Hat sich nicht gemeldet, auf Nachfrage am 7.1.2016 verkündet, dass er die Urlaubsvertretung für Herrn Kroll war und nun selbst in den Urlaub fährt. Technikerkontakt könne man "getrost vergessen". Kennt Herrn Dier nicht, kann kein Kontakt herstellen.
+ * Herr Dier: Begehung am Hochbunker 29.6.16 10:00 (kein Kontakt bisher)
+ * Herr Kroll - Glasfaser Business Experte: Soll sich laut Herrn CChen auf unsere email melden.
+ * 08002030309 - Geschäftskundenbereich Neukunden 1: 
+  * Mo-Do 9:00-16:30, Fr 9:00-13:00
+ * 08005035022 - Geschäftskundenbereich Neukunden 2: 
+  * Herr Donay - "Anfrage zu speziell wenden Sie sich an die 08001721234" 
+   * Anschlüsse am Hochbunker verfügbar: Standleitung 20MBit/s symetrisch 349.-€ 36 Monate Laufzeit 4 Wochen Anschlusszeit
+   * Eigenes Glasfaser für UMTS Turm ist natürlich ein anderer Anschluss - keine Daten verfügbar
+  * Herr Lond - schickt email intern an Techniker mit Zugang zum Hochbunker, dieser soll sich ab Montag 4.7.16 bei 3cpo melden (genannte Adresse: Hochbunker)
+ * 08007242663 - Geschäftskundenbereich Neukunden 3: 
+  * besetzt (Kabel Deutschland?)
+
+=== Telekom ===
+ * Kein VDSL für unsere Adresse möglich
+ * Keine Auskunft, ob die Bahn nebenan Telekom Kunde ist
+ * Telekom Chat, Michele:
+  * "Leider kann ich Ihnen die Frage hier im Chat nicht beantworten. Bitte sprechen Sie direkt mit den Kollegen unter 08003301300. Die Kollegen helfen Ihnen gerne weiter"
+ * Geschäftskundenkontakt: 08003301300
+   * "Franz Ulrich Strasse 16 (''=Interim'') & 19 (''vllt. Gesteinsprüferei'') sehe hier als Adresse. Glasfaser sehe ich hier überhaupt nicht drin."
+ * Glasfaserausbau: 08007733888
+ * Bauherrnservice: 08003301903 
+  * Frau Wieser:
+    * hat email an Techniker rausgeschickt, meldet sich per Telefon bei 3cpo
+  * Herr Christian Paul:
+    * Glasfaser für Neubau 8.000-10.000€ + Kosten für Bauarbeiten
+    * VDSL 50.000 an der Franz-Ulrich Str. 19 verfügbar.
+ * Spezieller Telekom Ansprechpartner bei der Bahn (für Hessen): Herr Peter Horn 017197xxxxx (Frankfurt)
+  * Verhandelt nur mit der Bahn -> 3cpo hat seinen Kontakt an Reiss von der DB weitergeleitet
+  * -> Reiss hat an Peter Schlicke weitergeleitet
+
+==== Tarif-Hack ====
+Adresse Franz Ulrich Str. gibt kein Ergebnis. Dagegen "34117 Kassel, Am Hauptbahnhof 0" führt den Kundendienst zur Autoauswahl sämtlicher Telekom Angebote. Ab da ist die Bedarfsanzeige maximal (Alle Tarife ever) auf dem Bildschirm. Ergebnis: z.B. 400 Mbit/s Glasfaser sind nur über das Kabelnetz verfügbar. Also wählen wir: 200...
+
+{{{{
+200 Mbit/s per Glasfaser bestellbar
+uplink bis max. 100 Mbit/s möglich
+Feste IP
+Telefonflat ins Festnetz 3 Nummern inkl. bis 10 möglich (= 2 Sprachkanäle max. 8 möglich)
+
+Kosten: 
+54,95€ 
++ FTTH 11,90€ 
+= 66,85€
+
+}}}}

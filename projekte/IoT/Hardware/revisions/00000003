@@ -1,0 +1,14 @@
+Entwurf
+
+== Sensoren = Knoten ==
+ * ESP8266-01 (billigster Typ), ggf. [[http://www.schatenseite.de/2016/04/22/esp8266-witty-cloud-modul/|Whitty Cloud]] Modul (schick)
+ * Batterieversorgung Alkaline / Eneloop (ggf. ergänzt durch PV)
+ * Jumper für Dauerstrom (Platz für Low Drop Regler vorsehen?)
+ * Stromsparen durch
+  * Deepsleep (~ 200 µA)
+  * ''oder'' separater Attiny zum Aufwecken (Interrupt on Port change) (~ 30 µA)
+  * ''oder ''Taster in der Vcc Leitung, der von MOSFET durch ESP überbrückt wird (vermutlich << 10 µA)
+ * ESP Module möglichst ohne Modifikation verwenden (Ausser LED für Betriebsspannungsanzeige auslöten)
+ * Einfache Gehäusemontage (Tropfenlöcher zum Einhängen o.Ä.)
+ * Vorhandene Gehäuse? Diese zweiteiligen Schraubdosen von DMB?
+ * Einfacher Batterietausch
