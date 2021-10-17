@@ -1,9 +1,0 @@
-Sammlung:
-
-Hibernate aktivieren:
-
- . (Stromloses Speichern und pausieren momentaner Arbeitsvorgaenge, gut fuer LAptops ohne Akku)
-
-a) Swap datei fuer Hibernate '''vor Installation''' (auch SSD ...)
-
-b)  Nachtraeglich aktivieren http://www.linuxandubuntu.com/home/how-to-enable-hibernate-in-ubuntu-linux

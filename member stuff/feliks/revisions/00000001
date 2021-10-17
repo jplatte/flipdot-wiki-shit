@@ -1,5 +1,0 @@
-== IRC ==
-=== Auto-OP ===
-{{{
-/msg chanserv flags #flipdot $NICKNAME +oOF
-}}}

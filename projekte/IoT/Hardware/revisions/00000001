@@ -1,8 +1,0 @@
-Entwurf
-
-'''Sensoren'''
-
- * ESP8266-01
- * Batterieversorgung Alkaline / Eneloop
- * Deepsleep ''oder'' separater Attiny zum Aufwecken (Interrupt on Port change)
- *

@@ -1,8 +1,0 @@
-Bei 3D-Druckern ist es wichtig, dass die Druckdüse bei der ersten Schicht den Richtigen Abstand zum Druckbett hat.  Mann kann das Druckbett manuell justieren aber genauer geht es mit einem Sensor.
-
-
-Die Funktion ist in der Anleitung zu der MARLIN-Firmware nachzulesen.
-http://marlinfw.org/docs/features/auto_bed_leveling.html
-
-Die Halterung des Sensors ist auf Thingverse veröffentlicht. 
-https://www.thingiverse.com/thing:3956207

@@ -1,7 +1,0 @@
-Mit dem Arduino kann man ein Puls und Sauerstoff Meßgerät bauen, das per OLED-Display die Werte ausgibt.
-
-Hier der Versuch:
-
-Anleitung: 
-https://github.com/jeffmer/tinyPulsePPG#readme
-Für Nano https://github.com/jeffmer/tinyPulsePPG/tree/master/nanoPulsePPG
