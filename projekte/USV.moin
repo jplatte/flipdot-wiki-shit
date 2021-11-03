@@ -1,5 +1,4 @@
 = Unterbrechungsfreie Stromversorgung =
-<<TableOfContents()>>
 
 == "DIE USV"℠ ==
 Eine große [[https://de.wikipedia.org/wiki/Unterbrechungsfreie_Stromversorgung|USV]] (aka. "DIE USV"℠) soll dazu dienen, den [[Server]] mit Notstrom zu versorgen, damit dieser --(sanft herunterfahren kann)-- im Notbetrieb --(mind. 12h)-- ca 20-40min weiterläuft und Services unterbrechungsfrei zur Verfügung stellt (z.B. [[Neuland/Internet|Internet]] in der Nachrichtenmeisterei).

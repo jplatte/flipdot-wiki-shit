@@ -1,4 +1,3 @@
-<<TableOfContents()>>
 Momentaner Status / Diskussionen siehe https://forum.flipdot.org/t/neuer-internetanschluss/235
 
 -----
@@ -6,18 +5,18 @@ Ausführliche Dokumentation der Recherche:
 == DSL ==
 In den Gebäuden der Nachrichtenmeisterei sind angeblich 3x 16Mbit/s DSL Kupferkabel angeschlossen bei Vodafone. Das Kabel führt neben unserem gelben Eingang ins Haus und endet am orangen Eingang im Verteiler.
 
-Wir teilen uns eine dieser schmalen asymmetrischen Leitungen u.a. mit einem Filmemacher und einer Firma mit Cloud, die ebenfalls GBit Upload benötigen. 
+Wir teilen uns eine dieser schmalen asymmetrischen Leitungen u.a. mit einem Filmemacher und einer Firma mit Cloud, die ebenfalls GBit Upload benötigen.
 
 == VDSL ==
 In der Nachrichtenmeisterei gibt es bisher kein VDSL, [[petition|das wollen wir ändern!]]
 
- Anschrift: 
- Franz-Ulrich-Strasse 18, 
+ Anschrift:
+ Franz-Ulrich-Strasse 18,
  34117 Kassel
 
 === Vergangenheit ===
 Es geht das Gerücht, es gab mal ein Kabel, dass durch einen Geheimtunnel direkt gegenüber zum Hochbunker der Vodafone in einen Switch führte. Diese Verbindung ist legendär und aktuell nicht vorhanden. Es soll auch bereits Verhandlungen mit der Bahn und einem Anbieter bzgl. Glasfaseranschluss gegeben haben, jedoch soll eine gewisse Landesgrenze hier eine komplizierende Rolle spielen. (Nachrichtenmeisterei auf Bundesgebiet?)
- 
+
 === Fragen ===
  * Wer hat sich bisher von der Nachrichtenmeisterei um Glasfaser gekümmert?
  * --(Kann Wolle bitte den Kabelsalat unten im Flur beschriften?)-- -> Exceltabelle
@@ -35,7 +34,7 @@ Die Telefonanschlüsse der Bahn sind intern in der [[https://de.wikipedia.org/wi
  * Frau Konopacsek (Sales Regionalbereich West): "Sie müssen sich mit Ihrem Anliegen bitte an die Telekom oder Vodafone wenden. Mit diesen beiden Unternehmen haben wir Rahmenverträge und diese können uns dann mit ihrem Anliegen beauftragen. Eine direkte Beauftragung ist leider nicht möglich."
  * Franz-Ulrich Str. 20 sitzt die Regionalverwaltung West der DB Kommunikations GmbH mit Serverraum und "USP 614" Hauptverteiler im Alucontainer davor. (Herr Reiss?)
  * Hinter unserem Haus liegen an den Schienen wahrscheinlich Glasfaser. (bis in die Nachrichtenmeisterei?)
- * Herr Reiss (Regionalleiter West): 
+ * Herr Reiss (Regionalleiter West):
   * "Der Auftrag läuft seit Wochen, wir haben keine Antwort oder namentlich bekannten Ansprechpartner der Telekom"
   * Einen Anschluss über Bahninterne Leitungen müsste man mit der DB Systel GmbH absprechen
  * Herr Schlicke (Vertrieb Regionalbereich West I.CVK 4-W) [Supertyp!]:
@@ -71,10 +70,10 @@ Die Telefonanschlüsse der Bahn sind intern in der [[https://de.wikipedia.org/wi
   * ♫ ... "Microsoft" WTF!
  * Vodafone in Ratingen/Düsseldorf direkt: nope
  * Region Nord Ferdinand Braun Platz 140549 Düsseldorf
- * Verwaltung-Zentrale: 02115330 
-  * Herr X Ratingen: 
+ * Verwaltung-Zentrale: 02115330
+  * Herr X Ratingen:
    * "weiss nix zu business oder Abteilungen" ?!
-  * Frau Meier Düsseldorf: 
+  * Frau Meier Düsseldorf:
    * sehr hilfsbereit, rief bei der Kundenbetreuung an (4.7.2016) - kann nichts machen.
  * Herr Cchen - Mobilfunk Business Experte - 017256xxxxx:
   * Grobes Angebot 100MBit/s symetrisch für ca. 1000€/Monat
@@ -82,14 +81,14 @@ Die Telefonanschlüsse der Bahn sind intern in der [[https://de.wikipedia.org/wi
    * Hat sich nicht gemeldet, auf Nachfrage am 7.1.2016 verkündet, dass er die Urlaubsvertretung für Herrn Kroll war und nun selbst in den Urlaub fährt. Technikerkontakt könne man "getrost vergessen". Kennt Herrn Dier nicht, kann kein Kontakt herstellen.
  * Herr Dier: Begehung am Hochbunker 29.6.16 10:00 (kein Kontakt bisher)
  * Herr Kroll - Glasfaser Business Experte: Soll sich laut Herrn CChen auf unsere email melden.
- * 08002030309 - Geschäftskundenbereich Neukunden 1: 
+ * 08002030309 - Geschäftskundenbereich Neukunden 1:
   * Mo-Do 9:00-16:30, Fr 9:00-13:00
- * 08005035022 - Geschäftskundenbereich Neukunden 2: 
-  * Herr Donay - "Anfrage zu speziell wenden Sie sich an die 08001721234" 
+ * 08005035022 - Geschäftskundenbereich Neukunden 2:
+  * Herr Donay - "Anfrage zu speziell wenden Sie sich an die 08001721234"
    * Anschlüsse am Hochbunker verfügbar: Standleitung 20MBit/s symetrisch 349.-€ 36 Monate Laufzeit 4 Wochen Anschlusszeit
    * Eigenes Glasfaser für UMTS Turm ist natürlich ein anderer Anschluss - keine Daten verfügbar
   * Herr Lond - schickt email intern an Techniker mit Zugang zum Hochbunker, dieser soll sich ab Montag 4.7.16 bei 3cpo melden (genannte Adresse: Hochbunker)
- * 08007242663 - Geschäftskundenbereich Neukunden 3: 
+ * 08007242663 - Geschäftskundenbereich Neukunden 3:
   * besetzt (Kabel Deutschland?)
  * ? hat zurückgerufen.
   * Frau Siebert. - Kann nichts machen, keinen Kollegen vermitteln.
@@ -102,7 +101,7 @@ Die Telefonanschlüsse der Bahn sind intern in der [[https://de.wikipedia.org/wi
  * Geschäftskundenkontakt: 08003301300
    * "Franz Ulrich Strasse 16 (''=Interim'') & 19 (''vllt. Gesteinsprüferei'') sehe hier als Adresse. Glasfaser sehe ich hier überhaupt nicht drin."
  * Glasfaserausbau: 08007733888
- * Bauherrnservice: 08003301903 
+ * Bauherrnservice: 08003301903
   * Frau Wieser:
     * hat email an Techniker rausgeschickt, meldet sich per Telefon bei 3cpo
   * Herr Christian Paul:
@@ -121,9 +120,9 @@ uplink bis max. 100 Mbit/s möglich
 Feste IP
 Telefonflat ins Festnetz 3 Nummern inkl. bis 10 möglich (= 2 Sprachkanäle max. 8 möglich)
 
-Kosten: 
-54,95€ 
-+ FTTH 11,90€ 
+Kosten:
+54,95€
++ FTTH 11,90€
 = 66,85€
 
 }}}}
